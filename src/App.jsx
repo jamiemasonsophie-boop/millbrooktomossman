@@ -14,11 +14,16 @@ export default function App() {
           </p>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-            Millbrook to Mossman
+            From Millbrook to Mossman
           </h1>
 
           <p className="text-xl md:text-2xl text-stone-200 max-w-3xl mx-auto leading-relaxed mb-10">
-            From elite training grounds in New Zealand to life-changing adventures across the globe.
+            From the stunning Southern Alps of Millbrook Resort, New Zealand, 
+            to the tropical rainforests of Far Northern Queensland, Australia.
+            Through life changing adventures in Germany, Canada, and the United States,
+            including 3 marriages and a medical diagnosis he couldn't outrun.
+            This is Jim Fraser's journey.
+            A story of love, loss and reinvention that is raw, revealing and riveting. 
           </p>
 
           <a
