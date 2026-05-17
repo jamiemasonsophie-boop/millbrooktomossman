@@ -26,7 +26,7 @@ export default function MillbrookToMossmanWebsite() {
             onClick={() => setPage('home')}
             className="text-2xl font-bold tracking-wide"
           >
-            Millbrook to Mossman
+            From Millbrook to Mossman
           </button>
 
           <nav className="flex gap-6 text-sm uppercase tracking-wider">
@@ -57,15 +57,15 @@ function HomePage() {
     >
       <div className="max-w-5xl mx-auto text-center">
         <p className="uppercase tracking-[0.4em] text-stone-300 text-sm mb-6">
-          A Memoir of Reinvention, Adventure & Resilience
+          A Raw and Revealing Memoir of Reinvention, Adventure & Resilience
         </p>
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-          Millbrook to Mossman
+          From Millbrook to Mossman
         </h1>
 
         <p className="text-xl md:text-2xl text-stone-200 max-w-3xl mx-auto leading-relaxed mb-10">
-          A cinematic memoir spanning elite sport, world travel, heartbreak, reinvention, and the relentless pursuit of purpose.
+          A cinematic memoir spanning elite sport, entrepeneurship, world travel, love, heartbreak, reinvention, and the relentless pursuit of purpose.
         </p>
 
         <a
@@ -86,7 +86,7 @@ function AboutPage() {
     <section className="min-h-screen bg-stone-900 px-6 py-24">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
         <img
-          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+          src="/biopicjpeg.jpg"
           alt="Author"
           className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
         />
@@ -102,15 +102,15 @@ function AboutPage() {
 
           <div className="space-y-6 text-lg text-stone-300 leading-relaxed">
             <p>
-              From the alpine landscapes of New Zealand to international adventures across Europe, Canada, Australia and beyond, this memoir chronicles a life shaped by ambition, risk, transformation and resilience.
+              From the alpine regions of New Zealand to international landscapes spanning Europe, Canada, Australia and beyond, this memoir chronicles a life shaped by ambition, risk, transformation and resilience.
             </p>
 
             <p>
-              What began in the world of elite training evolved into an extraordinary journey through entrepreneurship, reinvention and deeply personal challenges.
+              What began in the world of luxury resorts, evolved into an extraordinary global journey through entrepreneurship, reinvention and deeply personal challenges.
             </p>
 
             <p>
-              Millbrook to Mossman captures both the victories and the darker moments that ultimately forged a new understanding of purpose, identity and survival.
+              From Millbrook to Mossman captures both the victories and the darker moments that ultimately forged a new understanding of purpose, identity and survival.
             </p>
           </div>
         </div>
@@ -140,7 +140,7 @@ function BookPage() {
 
           <div className="space-y-6 text-lg text-stone-300 leading-relaxed mb-10">
             <p>
-              Honest, raw and cinematic, Millbrook to Mossman explores the emotional cost of ambition and the courage required to rebuild when life falls apart.
+              Honest, raw and cinematic, From Millbrook to Mossman explores the emotional cost of ambition and the courage required to rebuild when life falls apart.
             </p>
 
             <p>
@@ -164,10 +164,9 @@ function BookPage() {
 
 function GalleryPage() {
   const images = [
-    'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop',
+    'editedcover1.jpg',
+    'backpagejpeg.jpg',
+    'fullcoverpdf.pdf',
   ]
 
   return (
@@ -183,7 +182,7 @@ function GalleryPage() {
           </h2>
 
           <p className="text-xl text-stone-400 max-w-3xl mx-auto">
-            A visual journey inspired by the landscapes, experiences and emotions behind the memoir.
+            A visual journey inspired by the people, landscapes, experiences and emotions behind the memoir.
           </p>
         </div>
 
