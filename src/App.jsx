@@ -1,3 +1,4 @@
+```jsx
 import { useState } from 'react'
 
 export default function MillbrookToMossmanWebsite() {
@@ -52,27 +53,27 @@ function HomePage() {
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center px-6"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop')",
+          "linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.55)), url('/homepage-hero-background.webp')",
       }}
     >
       <div className="max-w-5xl mx-auto text-center">
-        <p className="uppercase tracking-[0.4em] text-stone-300 text-sm mb-6">
+        <p className="uppercase tracking-[0.4em] text-stone-700 text-sm mb-6 font-semibold">
           A Raw and Revealing Memoir of Reinvention, Adventure & Resilience
         </p>
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-stone-900">
           From Millbrook to Mossman
         </h1>
 
-        <p className="text-xl md:text-2xl text-stone-200 max-w-3xl mx-auto leading-relaxed mb-10">
-          A cinematic memoir spanning global entrepeneurship, travel, love, loss, reinvention, and the relentless pursuit of purpose.
+        <p className="text-xl md:text-2xl text-stone-800 max-w-3xl mx-auto leading-relaxed mb-10 font-medium">
+          A cinematic memoir spanning global entrepreneurship, travel, love, loss, reinvention, and the relentless pursuit of purpose.
         </p>
 
         <a
           href="https://www.amazon.com.au/dp/B0GX356C9C"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-black px-8 py-4 rounded-2xl text-lg font-semibold hover:scale-105 transition-transform"
+          className="inline-block bg-black text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:scale-105 transition-transform"
         >
           Buy on Amazon
         </a>
@@ -86,7 +87,7 @@ function AboutPage() {
     <section className="min-h-screen bg-stone-900 px-6 py-24">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
         <img
-          src="/BioPicJPEG.jpg"
+          src="/about-page-portrait.webp"
           alt="Author"
           className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
         />
@@ -106,7 +107,7 @@ function AboutPage() {
             </p>
 
             <p>
-              What began in the world of exclusive luxury golf resorts, evolved into an extraordinary global journey through entrepreneurship, reinvention and deeply personal challenges.
+              What began in the world of exclusive luxury golf resorts evolved into an extraordinary global journey through entrepreneurship, reinvention and deeply personal challenges.
             </p>
 
             <p>
@@ -124,9 +125,11 @@ function BookPage() {
     <section className="min-h-screen bg-black px-6 py-24">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="bg-stone-900 rounded-3xl p-10 border border-stone-800">
-          <div className="aspect-[2/3] bg-stone-800 rounded-2xl flex items-center justify-center text-stone-400 text-xl">
-            Book Cover Placeholder
-          </div>
+          <img
+            src="/book-cover-image.webp"
+            alt="From Millbrook to Mossman Book Cover"
+            className="rounded-2xl shadow-2xl w-full"
+          />
         </div>
 
         <div>
@@ -164,9 +167,9 @@ function BookPage() {
 
 function GalleryPage() {
   const images = [
-    'EditedCover1.jpg',
-    'BackPageJPEG.jpg',
-    'FullCoverPDF.pdf',
+    '/gallery-image-1.webp',
+    '/gallery-image-2.webp',
+    '/book-cover-image.webp',
   ]
 
   return (
@@ -229,3 +232,6 @@ function ContactPage() {
     </section>
   )
 }
+```
+
+
