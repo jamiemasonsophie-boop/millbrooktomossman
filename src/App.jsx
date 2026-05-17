@@ -65,7 +65,7 @@ function HomePage() {
         </h1>
 
         <p className="text-xl md:text-2xl text-stone-200 max-w-3xl mx-auto leading-relaxed mb-10">
-          A cinematic memoir spanning elite sport, entrepeneurship, world travel, love, heartbreak, reinvention, and the relentless pursuit of purpose.
+          A cinematic memoir spanning global entrepeneurship, travel, love, loss, reinvention, and the relentless pursuit of purpose.
         </p>
 
         <a
@@ -86,7 +86,7 @@ function AboutPage() {
     <section className="min-h-screen bg-stone-900 px-6 py-24">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
         <img
-          src="/biopicjpeg.jpg"
+          src="/BioPicJPEG.jpg"
           alt="Author"
           className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
         />
@@ -106,7 +106,7 @@ function AboutPage() {
             </p>
 
             <p>
-              What began in the world of luxury resorts, evolved into an extraordinary global journey through entrepreneurship, reinvention and deeply personal challenges.
+              What began in the world of exclusive luxury golf resorts, evolved into an extraordinary global journey through entrepreneurship, reinvention and deeply personal challenges.
             </p>
 
             <p>
@@ -140,7 +140,7 @@ function BookPage() {
 
           <div className="space-y-6 text-lg text-stone-300 leading-relaxed mb-10">
             <p>
-              Honest, raw and cinematic, From Millbrook to Mossman explores the emotional cost of ambition and the courage required to rebuild when life falls apart.
+              Honest, raw and revealing, From Millbrook to Mossman explores the emotional cost of ambition and the courage required to rebuild when life falls apart.
             </p>
 
             <p>
@@ -164,9 +164,9 @@ function BookPage() {
 
 function GalleryPage() {
   const images = [
-    'editedcover1.jpg',
-    'backpagejpeg.jpg',
-    'fullcoverpdf.pdf',
+    'EditedCover1.jpg',
+    'BackPageJPEG.jpg',
+    'FullCoverPDF.pdf',
   ]
 
   return (
