@@ -209,9 +209,22 @@ function ContactPage() {
           Contact
         </p>
 
-        <h2 className="text-5xl font-bold mb-10 text-center">
+        <h2 className="text-5xl font-bold mb-6 text-center">
           Get In Touch
         </h2>
+
+        <p className="text-center text-stone-300 mb-10 text-lg">
+          For media enquiries, reader feedback, or general contact, email:
+        </p>
+
+        <div className="text-center mb-12">
+          <a
+            href="mailto:jamiemasonsophie@gmail.com"
+            className="text-2xl text-white underline hover:text-stone-300 transition-colors"
+          >
+            jamiemasonsophie@gmail.com
+          </a>
+        </div>
 
         <form className="space-y-6">
           <input
