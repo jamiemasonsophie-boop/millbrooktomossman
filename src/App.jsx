@@ -1,4 +1,3 @@
-```jsx
 import { useState } from 'react'
 
 export default function App() {
@@ -232,7 +231,6 @@ function ContactPage() {
     </section>
   )
 }
-```
 
 
 
