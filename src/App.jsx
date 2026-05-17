@@ -209,49 +209,22 @@ function ContactPage() {
           Contact
         </p>
 
-        <h2 className="text-5xl font-bold mb-6 text-center">
+        <h2 className="text-5xl font-bold mb-10 text-center">
           Get In Touch
         </h2>
 
         <p className="text-center text-stone-300 mb-10 text-lg">
-          For media enquiries, reader feedback, or general contact, email:
+          For media enquiries, reader feedback, or speaking opportunities, please get in touch.
         </p>
 
-        <div className="text-center mb-12">
+        <div className="text-center">
           <a
             href="mailto:jamiemasonsophie@gmail.com"
-            className="text-2xl text-white underline hover:text-stone-300 transition-colors"
-          >
-            jamiemasonsophie@gmail.com
-          </a>
-        </div>
-
-        <form className="space-y-6">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full bg-stone-800 border border-stone-700 rounded-2xl px-6 py-4 text-white"
-          />
-
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full bg-stone-800 border border-stone-700 rounded-2xl px-6 py-4 text-white"
-          />
-
-          <textarea
-            rows="6"
-            placeholder="Your Message"
-            className="w-full bg-stone-800 border border-stone-700 rounded-2xl px-6 py-4 text-white"
-          />
-
-          <button
-            type="submit"
-            className="w-full bg-white text-black py-4 rounded-2xl font-bold text-lg hover:scale-[1.01] transition-transform"
+            className="inline-block bg-white text-black px-8 py-4 rounded-2xl font-bold text-lg hover:scale-[1.02] transition-transform"
           >
             Send Message
-          </button>
-        </form>
+          </a>
+        </div>
       </div>
     </section>
   )
