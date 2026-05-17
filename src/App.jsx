@@ -1,7 +1,7 @@
 ```jsx
 import { useState } from 'react'
 
-export default function MillbrookToMossmanWebsite() {
+export default function App() {
   const [page, setPage] = useState('home')
 
   const renderPage = () => {
