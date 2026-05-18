@@ -92,21 +92,33 @@ function AboutPage() {
         />
 
         <div>
-          <p className="uppercase tracking-[0.3em] text-stone-400 text-sm mb-4">
-            A Life Lived Across Continents.
-            
-            From the alpine regions of New Zealand to international landscapes spanning Europe, The United States, Canada, and Australia, this memoir chronicles a life shaped by ambition, risk, transformation and resilience.
-            
-            What started in the world of a luxury golf resort back in 1993, evolved into an extraordinary global journey through love, loss, reinvention and deeply personal challenges.
-            
-            From Millbrook to Mossman captures both the victories and the failures, including the darker moments that ultimately forged a new understanding of purpose, identity and survival.
-            
-            Jim Fraser is a New Zealand–born writer whose life journey has taken him from his hometown of Auckland to reside in the breathtaking alpine landscapes around Queenstown in New Zealand’s South Island, on to Sydney, Australia, and ultimately to the tropical frontier of Far North Queensland.
-            
-            From Millbrook to Mossman is Jim’s first book.
-            
-            Jim has two adult children and now divides his time between writing, creative projects, and producing online content supporting those living with Multiple Sclerosis.
-            
+          <h2 className="text-5xl font-bold mb-8">
+            About the Author
+          </h2>
+
+          <div className="space-y-6 text-lg text-stone-300 leading-relaxed">
+            <p>
+              From the alpine regions of New Zealand to international landscapes spanning Europe, The United States, Canada, and Australia, this memoir chronicles a life shaped by ambition, risk, transformation and resilience.
+            </p>
+
+            <p>
+              What started in the world of a luxury golf resort back in 1993 evolved into an extraordinary global journey through love, loss, reinvention and deeply personal challenges.
+            </p>
+
+            <p>
+              From Millbrook to Mossman captures both the victories and the failures, including the darker moments that ultimately forged a new understanding of purpose, identity and survival.
+            </p>
+
+            <p>
+              Jim Fraser is a New Zealand–born writer whose life journey has taken him from Auckland to Queenstown, Sydney and ultimately the tropical frontier of Far North Queensland.
+            </p>
+
+            <p>
+              From Millbrook to Mossman is Jim’s first book.
+            </p>
+
+            <p>
+              Jim now divides his time between writing, creative projects and producing online content supporting those living with Multiple Sclerosis.
             </p>
           </div>
         </div>
@@ -201,22 +213,22 @@ function GalleryPage() {
 function ContactPage() {
   return (
     <section
-  className="min-h-screen bg-cover bg-center px-6 py-24 flex items-center justify-center"
-  style={{
-    backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('/gallery-image-2.webp')",
-  }}
->
-      <div className="max-w-3xl w-full bg-stone-900 border border-stone-800 rounded-3xl p-10">
-        <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4 text-center">
+      className="min-h-screen bg-cover bg-center px-6 py-24 flex items-center justify-center"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('/gallery-image-2.webp')",
+      }}
+    >
+      <div className="max-w-3xl w-full bg-stone-900/80 backdrop-blur-sm border border-stone-700 rounded-3xl p-10">
+        <p className="uppercase tracking-[0.3em] text-stone-300 text-sm mb-4 text-center">
           Contact
         </p>
 
-        <h2 className="text-5xl font-bold mb-10 text-center">
+        <h2 className="text-5xl font-bold mb-10 text-center text-white">
           Get In Touch
         </h2>
 
-        <p className="text-center text-stone-300 mb-10 text-lg">
+        <p className="text-center text-stone-200 mb-10 text-lg">
           For media enquiries, reader feedback, or speaking opportunities, please get in touch.
         </p>
 
