@@ -152,7 +152,7 @@ function BookPage() {
             rel="noopener noreferrer"
             className="inline-block bg-white text-black px-8 py-4 rounded-2xl text-lg font-bold hover:scale-105 transition-transform"
           >
-            Order your copy of the Book
+            Order Your Copy Today!
           </a>
         </div>
       </div>
@@ -164,7 +164,6 @@ function GalleryPage() {
   const images = [
     '/homepage-hero-background.webp',
     '/gallery-image-2.webp',
-    '/book-cover-image.webp',
   ]
 
   return (
@@ -201,7 +200,13 @@ function GalleryPage() {
 
 function ContactPage() {
   return (
-    <section className="min-h-screen bg-black px-6 py-24 flex items-center justify-center">
+    <section
+  className="min-h-screen bg-cover bg-center px-6 py-24 flex items-center justify-center"
+  style={{
+    backgroundImage:
+      "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('/gallery-image-2.webp')",
+  }}
+>
       <div className="max-w-3xl w-full bg-stone-900 border border-stone-800 rounded-3xl p-10">
         <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4 text-center">
           Contact
