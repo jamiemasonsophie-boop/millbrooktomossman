@@ -57,7 +57,7 @@ function HomePage() {
     >
       <div className="max-w-5xl mx-auto text-center">
         <p className="uppercase tracking-[0.4em] text-stone-700 text-sm mb-6 font-semibold">
-          A Raw and Revealing Memoir of Reinvention, Adventure & Resilience
+          An Utterly Raw and Completely Revealing Memoir of Reinvention, Resilience and Recovery.
         </p>
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-stone-900">
@@ -65,7 +65,7 @@ function HomePage() {
         </h1>
 
         <p className="text-xl md:text-2xl text-stone-800 max-w-3xl mx-auto leading-relaxed mb-10 font-medium">
-          A cinematic memoir spanning global entrepreneurship, travel, love, loss, reinvention, and the relentless pursuit of purpose.
+          An engrossing memoir spanning global entrepreneurship, travel, love, loss, reinvention, and the relentless pursuit of purpose.
         </p>
 
         <a
@@ -93,7 +93,11 @@ function AboutPage() {
 
         <div>
           <p className="uppercase tracking-[0.3em] text-stone-400 text-sm mb-4">
-            About the Author
+            About the Author: 
+            Jim Fraser is a New Zealand–born writer whose life journey has taken him from his hometown of Auckland to reside in the breathtaking alpine landscapes around Queenstown in New Zealand’s South Island, on to Sydney, Australia, and ultimately to the tropical frontier of Far North Queensland.
+            From Millbrook to Mossman is Jim’s first book.
+            Jim has two adult children and now divides his time between writing, creative projects, and producing online content supporting those living with Multiple Sclerosis.
+
           </p>
 
           <h2 className="text-5xl font-bold mb-8">
@@ -102,15 +106,15 @@ function AboutPage() {
 
           <div className="space-y-6 text-lg text-stone-300 leading-relaxed">
             <p>
-              From the alpine regions of New Zealand to international landscapes spanning Europe, Canada, Australia and beyond, this memoir chronicles a life shaped by ambition, risk, transformation and resilience.
+              From the alpine regions of New Zealand to international landscapes spanning Europe, The United States, Canada, and Australia, this memoir chronicles a life shaped by ambition, risk, transformation and resilience.
             </p>
 
             <p>
-              What began in the world of exclusive luxury golf resorts evolved into an extraordinary global journey through entrepreneurship, reinvention and deeply personal challenges.
+              What started in the world of a luxury golf resort back in 1993, evolved into an extraordinary global journey through love, loss, reinvention and deeply personal challenges.
             </p>
 
             <p>
-              From Millbrook to Mossman captures both the victories and the darker moments that ultimately forged a new understanding of purpose, identity and survival.
+              From Millbrook to Mossman captures both the victories and the failures, including the darker moments that ultimately forged a new understanding of purpose, identity and survival.
             </p>
           </div>
         </div>
@@ -146,7 +150,7 @@ function BookPage() {
             </p>
 
             <p>
-              Spanning elite performance, international travel, relationships, reinvention and survival, the memoir offers a deeply personal account of one man’s pursuit of meaning.
+              A truly international journey covering entrepreneurship, relationships, reinvention and survival, this memoir offers a deeply personal account of one man’s pursuit of meaning.
             </p>
           </div>
 
@@ -156,7 +160,7 @@ function BookPage() {
             rel="noopener noreferrer"
             className="inline-block bg-white text-black px-8 py-4 rounded-2xl text-lg font-bold hover:scale-105 transition-transform"
           >
-            Order the Book
+            Order your copy of the Book
           </a>
         </div>
       </div>
@@ -184,7 +188,7 @@ function GalleryPage() {
           </h2>
 
           <p className="text-xl text-stone-400 max-w-3xl mx-auto">
-            A visual journey inspired by the people, landscapes, experiences and emotions behind the memoir.
+            A completely engrossing journey inspired by the people, landscapes, experiences and emotions behind the memoir.
           </p>
         </div>
 
