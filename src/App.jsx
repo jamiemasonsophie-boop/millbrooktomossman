@@ -289,7 +289,7 @@ function ExcerptPage() {
         <div className="bg-stone-900 border border-stone-800 rounded-3xl p-10 md:p-16 shadow-2xl">
 
           <h3 className="text-3xl font-semibold mb-12 text-white">
-            Chapter One
+            Chapter Two - New Beginnings.
           </h3>
 
           <div className="space-y-6 text-xl leading-relaxed text-stone-300 max-w-3xl mx-auto">
