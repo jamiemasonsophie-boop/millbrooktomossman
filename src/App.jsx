@@ -230,6 +230,7 @@ function BookPage() {
 function GalleryPage() {
   const images = [
     '/PaperbackBookWEBP.webp',
+    '/OpenBook.jpg',
     '/Gallery1b.webp',
   ]
 
