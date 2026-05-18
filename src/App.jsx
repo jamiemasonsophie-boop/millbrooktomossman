@@ -57,7 +57,7 @@ function HomePage() {
     >
       <div className="max-w-5xl mx-auto text-center">
         <p className="uppercase tracking-[0.4em] text-stone-700 text-sm mb-6 font-semibold">
-          An Utterly Raw and Completely Revealing Memoir of Reinvention, Resilience and Recovery.
+          Utterly Riveting and Completely Raw, this is a Memoir of Revelation, Reinvention, Resilience and Recovery.
         </p>
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-stone-900">
@@ -93,8 +93,6 @@ function AboutPage() {
 
         <div>
           <p className="uppercase tracking-[0.3em] text-stone-400 text-sm mb-4">
-            About the Author: 
-            
             A Life Lived Across Continents.
             
             From the alpine regions of New Zealand to international landscapes spanning Europe, The United States, Canada, and Australia, this memoir chronicles a life shaped by ambition, risk, transformation and resilience.
@@ -144,7 +142,7 @@ function BookPage() {
             </p>
 
             <p>
-              A truly international journey covering entrepreneurship, relationships, reinvention and survival, this memoir offers a deeply personal account of one man’s pursuit of meaning.
+              A truly international tale covering entrepreneurship, relationships, reinvention and survival, this memoir offers a deeply personal account of one man’s pursuit of meaning.
             </p>
           </div>
 
@@ -182,7 +180,7 @@ function GalleryPage() {
           </h2>
 
           <p className="text-xl text-stone-400 max-w-3xl mx-auto">
-            A completely engrossing journey inspired by the people, landscapes, experiences and emotions behind the memoir.
+            A totally engrossing journey inspired by the people, landscapes, experiences and emotions behind the memoir.
           </p>
         </div>
 
