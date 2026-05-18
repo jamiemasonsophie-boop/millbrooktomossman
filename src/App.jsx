@@ -295,7 +295,7 @@ function ExcerptPage() {
           <div className="space-y-6 text-xl leading-relaxed text-stone-300 max-w-3xl mx-auto">
 
             <p>
-              Years earlier, during a stopover in Maui, I'd met a woman named Noelle.
+              Years earlier, during a stopover on Maui, I'd met a woman named Noelle.
             </p>
 
             <p>
@@ -303,19 +303,19 @@ function ExcerptPage() {
             </p>
 
             <p>
-              She was California distilled - sun-bronzed skin, white teeth, an ease that felt far more inherited than learned.
+              She was California distilled - sun-bronzed skin, white teeth, blessed with an ease that felt far more inherited than learned.
             </p>
 
             <p>
-              Exactly the way The Beach Boys wished all girls could be back on their 1965 hit record.
+              Exactly the way The Beach Boys had wished all girls could be back on their 1965 hit record.
             </p>
 
             <p>
-              We met beneath the Banyan tree outside the Pioneer Hotel in Lahaina.
+              We met beneath the branches of the sprawling Banyan tree outside the Pioneer Hotel in Lahaina.
             </p>
 
             <p>
-              "Hang loose," she said, flashing me a shaka, smiling like it was more than a greeting.
+              "Hang loose," she said, flashing me a shaka, smiling warmly like it was more than a greeting.
             </p>
 
             <p>
@@ -331,15 +331,15 @@ function ExcerptPage() {
             </p>
 
             <p>
-              We drove the sinuous coast road out to Hana in a cheap convertible - music loud, jungle pressing in, Noelle standing on her seat as I drove, dancing to Bon Jovi, waving at passing schoolkids like the whole island belonged to her.
+              We drove the sinuous coast road out to heavenly Hana in a cheap convertible - music loud, jungle pressing in, Noelle standing on her seat as I drove, dancing to Bon Jovi, waving at passing schoolkids like the whole island belonged to her.
             </p>
 
             <p>
-              She had a way of looking at me that made everything feel heightened. Immediate.
+              She had a way of looking at me that made everything feel heightened. More immediate.
             </p>
 
             <p>
-              I didn't have language for it then, but something was shifting - subtly, but permanently.
+              I didn't have language for it then, but something in my psyche was shifting - subtly, but permanently.
             </p>
 
             <p>
@@ -367,7 +367,7 @@ function ExcerptPage() {
             </p>
 
             <p>
-              Three months later, after Europe, I changed my flight home and flew straight into San Francisco with little money and no real plan beyond seeing her again.
+              Three months later, after driving around Europe in a van, I changed my flight home and flew straight into San Francisco with little money and no real plan beyond seeing her again.
             </p>
 
             <p>
@@ -383,11 +383,11 @@ function ExcerptPage() {
             </p>
 
             <p>
-              The place ran on rhythm - laughter, clinking glasses, half-finished pitchers of chilled margaritas sweating in low light.
+              The place ran on rhythm - laughter, clinking glasses and half-finished pitchers of chilled margaritas sweating in low light.
             </p>
 
             <p>
-              I'd sit at the bar while she worked, watching the room move around me.
+              I'd sit at the bar while she worked, watching the room move around me, slowly becoming a 'local' - until I opened my mouth anyway.
             </p>
 
             <p>
