@@ -11,6 +11,8 @@ export default function App() {
         return <BookPage />
       case 'gallery':
         return <GalleryPage />
+      case 'excerpt':
+        return <ExcerptPage />
       case 'contact':
         return <ContactPage />
       default:
@@ -30,11 +32,47 @@ export default function App() {
           </button>
 
           <nav className="flex gap-6 text-sm uppercase tracking-wider">
-            <button onClick={() => setPage('home')} className="hover:text-stone-300 transition-colors">Home</button>
-            <button onClick={() => setPage('about')} className="hover:text-stone-300 transition-colors">About</button>
-            <button onClick={() => setPage('book')} className="hover:text-stone-300 transition-colors">Book</button>
-            <button onClick={() => setPage('gallery')} className="hover:text-stone-300 transition-colors">Gallery</button>
-            <button onClick={() => setPage('contact')} className="hover:text-stone-300 transition-colors">Contact</button>
+            <button
+              onClick={() => setPage('home')}
+              className="hover:text-stone-300 transition-colors"
+            >
+              Home
+            </button>
+
+            <button
+              onClick={() => setPage('about')}
+              className="hover:text-stone-300 transition-colors"
+            >
+              About
+            </button>
+
+            <button
+              onClick={() => setPage('book')}
+              className="hover:text-stone-300 transition-colors"
+            >
+              Book
+            </button>
+
+            <button
+              onClick={() => setPage('gallery')}
+              className="hover:text-stone-300 transition-colors"
+            >
+              Gallery
+            </button>
+
+            <button
+              onClick={() => setPage('excerpt')}
+              className="hover:text-stone-300 transition-colors"
+            >
+              Excerpt
+            </button>
+
+            <button
+              onClick={() => setPage('contact')}
+              className="hover:text-stone-300 transition-colors"
+            >
+              Contact
+            </button>
           </nav>
         </div>
       </header>
@@ -57,7 +95,8 @@ function HomePage() {
     >
       <div className="max-w-5xl mx-auto text-center">
         <p className="uppercase tracking-[0.4em] text-stone-700 text-sm mb-6 font-semibold">
-          Utterly Riveting and Completely Raw, this is a Memoir of Revelation, Reinvention, Resilience and Recovery.
+          Utterly Riveting and Completely Raw, this is a Memoir of Revelation,
+          Reinvention, Resilience and Recovery.
         </p>
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-stone-900">
@@ -65,7 +104,8 @@ function HomePage() {
         </h1>
 
         <p className="text-xl md:text-2xl text-stone-800 max-w-3xl mx-auto leading-relaxed mb-10 font-medium">
-          An engrossing memoir spanning global entrepreneurship, travel, love, loss, reinvention, and the relentless pursuit of purpose.
+          An engrossing memoir spanning global entrepreneurship, travel, love,
+          loss, reinvention, and the relentless pursuit of purpose.
         </p>
 
         <a
@@ -98,19 +138,28 @@ function AboutPage() {
 
           <div className="space-y-6 text-lg text-stone-300 leading-relaxed">
             <p>
-              From the alpine regions of New Zealand to international landscapes spanning Europe, The United States, Canada, and Australia, this memoir chronicles a life shaped by ambition, risk, transformation and resilience.
+              From the alpine regions of New Zealand to international landscapes
+              spanning Europe, The United States, Canada, and Australia, this
+              memoir chronicles a life shaped by ambition, risk,
+              transformation and resilience.
             </p>
 
             <p>
-              What started at a luxury golf resort back in 1993, evolved into an extraordinary global journey through love, loss, reinvention and deeply personal challenges.
+              What started at a luxury golf resort back in 1993, evolved into
+              an extraordinary global journey through love, loss, reinvention
+              and deeply personal challenges.
             </p>
 
             <p>
-              From Millbrook to Mossman captures both the victories and the failures, including the darker moments that ultimately forged a new understanding of purpose, identity and survival.
+              From Millbrook to Mossman captures both the victories and the
+              failures, including the darker moments that ultimately forged a
+              new understanding of purpose, identity and survival.
             </p>
 
             <p>
-              Jim Fraser is a New Zealand–born writer whose life journey has taken him from Auckland to Queenstown, Sydney and ultimately the tropical frontier of Far North Queensland.
+              Jim Fraser is a New Zealand–born writer whose life journey has
+              taken him from Auckland to Queenstown, Sydney and ultimately the
+              tropical frontier of Far North Queensland.
             </p>
 
             <p>
@@ -118,7 +167,9 @@ function AboutPage() {
             </p>
 
             <p>
-              Jim now divides his time between writing, creative projects and producing online content supporting those living with Multiple Sclerosis.
+              Jim now divides his time between writing, creative projects and
+              producing online content supporting those living with Multiple
+              Sclerosis.
             </p>
           </div>
         </div>
@@ -150,11 +201,15 @@ function BookPage() {
 
           <div className="space-y-6 text-lg text-stone-300 leading-relaxed mb-10">
             <p>
-              Honest, raw and revealing, From Millbrook to Mossman explores the emotional cost of ambition and the courage required to rebuild when life falls apart.
+              Honest, raw and revealing, From Millbrook to Mossman explores the
+              emotional cost of ambition and the courage required to rebuild
+              when life falls apart.
             </p>
 
             <p>
-              A truly international tale covering entrepreneurship, relationships, reinvention and survival, this memoir offers a deeply personal account of one man’s pursuit of meaning.
+              A truly international tale covering entrepreneurship,
+              relationships, reinvention and survival, this memoir offers a
+              deeply personal account of one man’s pursuit of meaning.
             </p>
           </div>
 
@@ -191,7 +246,8 @@ function GalleryPage() {
           </h2>
 
           <p className="text-xl text-stone-400 max-w-3xl mx-auto">
-            A totally engrossing journey inspired by the people, landscapes, experiences and emotions behind the memoir.
+            A totally engrossing journey inspired by the people, landscapes,
+            experiences and emotions behind the memoir.
           </p>
         </div>
 
@@ -204,6 +260,65 @@ function GalleryPage() {
               className="rounded-3xl shadow-2xl h-[400px] w-full object-cover hover:scale-[1.02] transition-transform"
             />
           ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function ExcerptPage() {
+  return (
+    <section className="min-h-screen bg-black px-6 py-24">
+      <div className="max-w-4xl mx-auto">
+
+        <div className="text-center mb-16">
+          <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+            Memoir Excerpt
+          </p>
+
+          <h2 className="text-5xl font-bold mb-6 text-white">
+            Read a Sample
+          </h2>
+
+          <p className="text-xl text-stone-400 max-w-2xl mx-auto">
+            A glimpse into the deeply personal journey behind
+            From Millbrook to Mossman.
+          </p>
+        </div>
+
+        <div className="bg-stone-900 border border-stone-800 rounded-3xl p-10 md:p-14 shadow-2xl">
+
+          <h3 className="text-3xl font-semibold mb-10 text-white">
+            Chapter One
+          </h3>
+
+          <div className="space-y-8 text-lg leading-9 text-stone-300">
+
+            <p>
+              Paste your memoir sample pages here.
+            </p>
+
+            <p>
+              Each paragraph should go inside its own paragraph tag.
+            </p>
+
+            <p>
+              You can make this section as long as you like.
+            </p>
+
+          </div>
+
+          <div className="mt-14 text-center">
+            <a
+              href="https://www.amazon.com.au/dp/B0GX356C9C"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-black px-8 py-4 rounded-2xl text-lg font-bold hover:scale-105 transition-transform"
+            >
+              Continue Reading on Amazon
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
@@ -229,7 +344,8 @@ function ContactPage() {
         </h2>
 
         <p className="text-center text-stone-200 mb-10 text-lg">
-          For media enquiries, reader feedback, or speaking opportunities, please get in touch.
+          For media enquiries, reader feedback, or speaking opportunities,
+          please get in touch.
         </p>
 
         <div className="text-center">
