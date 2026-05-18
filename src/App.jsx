@@ -295,15 +295,88 @@ function ExcerptPage() {
           <div className="space-y-8 text-lg leading-9 text-stone-300">
 
             <p>
-              Paste your memoir sample pages here.
+              Years earlier, during a stopover in Maui, I’d met a woman named Noelle.
+              She was crewing aboard an ocean-going yacht, a Swan 54’ owned by an L.A. television producer named Chuck. 
+              She was California distilled - sun-bronzed skin, white teeth, an ease that felt far more inherited than learned.
+              Exactly the way The Beach Boys wished all girls could be back on their 1965 hit record.
+              We met beneath the Banyan tree outside the Pioneer Hotel in Lahaina.
+              “Hang loose,” she said, flashing me a shaka, smiling like it was more than a greeting.
             </p>
 
             <p>
-              Each paragraph should go inside its own paragraph tag.
+              We fell into rhythm quickly.
+              Time loosened as days together stretched. 
+              She introduced me to blazing on Maui Wowie, to tripping on Magic ‘shrooms, and to a slower, more fluid way of moving through the world. 
+              We drove the sinuous coast road out to Hana in a cheap convertible - music loud, jungle pressing in, Noelle standing on her seat as I drove, dancing to Bon Jovi, waving at the passing schoolkids like the whole island belonged to her.
+              She had a way of looking at me that made everything feel heightened. Immediate.
+              I didn’t have language for it then, but something was shifting - subtly, but permanently.
+              Leaving her was far harder than I expected.
+              She was sailing back to San Fran. 
+              I was heading to London.
+              “You should come to Santa Cruz on your way back,” she said on our last night together, sitting barefoot at the marina. 
+              “Let me show you the real California.”
+              So, I did.
             </p>
 
             <p>
-              You can make this section as long as you like.
+              Three months later, after Europe, I changed my flight home and flew straight into San Francisco with little money and no real plan beyond seeing her again.
+              She picked me up from the airport and we drove down to her small beachside apartment in Santa Cruz.
+              What followed felt less like a trip, and more like slipping into an alternate version of life - beach volleyball, lazy days hanging out on the pier, driving up and down the P.C.H. exploring, nights at the surf-bar where she worked.
+              The place ran on rhythm - laughter, clinking glasses, half-finished pitchers of chilled margaritas sweating in low light. 
+              I’d sit at the bar while she worked, watching the room move around me.
+              People took an interest.
+              “Hey - come meet Noelle’s friend from NooZeeland!”
+              It wasn’t anything I’d done. It was how I sounded.
+              My accent - unremarkable at home - became a curiosity. A small performance.
+              “Go on,” they’d say. “Say something.”
+              So, I would.
+              They’d laugh, repeat words back to me, try them on like they were testing a new accent of their own.
+              I played along. 
+              It was easier than resisting it. 
+              But there was something quietly disorienting about being reduced, even harmlessly, to the way you sounded.
+              Still, those nights had a pull. 
+              A looseness. 
+              A sense that identity wasn’t fixed - that it could shift depending on where you stood, and who you stood among.
+            </p>
+
+            <p>
+              We spent the next few weeks together.
+              Drove south to Carmel, then on to Monterey, finishing at Pebble Beach.
+              I remember standing there, cliffs falling into the Pacific, the golf course carved into the coastline with absolute confidence.
+              “This is obscene,” I said.
+              “In a good way?” she asked.
+              “In the best way.”
+              It wasn’t just the setting.
+              It was the intention behind it.
+              These places weren’t accidental. 
+              They were constructed - carefully designed environments that allowed people to step, briefly, into a different version of themselves – just as I was doing.
+              There was something strangely familiar about Pebble Beach.
+              Not in its architecture or geography, but in the feeling it created — the quiet understanding that this was a place designed for people who had already conquered the practical concerns of ordinary life and now sought only beauty, exclusivity, and experience.
+              In many ways, it reminded me of the ancient city of Petra in Southern Jordan.
+              Separated by two thousand years, perhaps, and built in utterly different landscapes, undeniably, but both existed as meeting places and playgrounds for the wealthy and influential of their eras. 
+              Petra rose from the desert as a hidden kingdom of astonishing grandeur, its rose-red facades carved directly into sheer canyon walls to impress traders, nobles, and dignitaries arriving from distant civilizations. 
+              Pebble Beach achieved the same effect through different means — dramatic coastline, immaculate fairways, cypress trees bent by Pacific winds, and an atmosphere so carefully curated it felt almost theatrical.
+              Neither place was built merely for function. 
+              They were built to evoke emotion.
+            </p>
+
+            <p>
+              Petra understood the power of anticipation. 
+              Travelers would move through the narrow darkness of the Siq before suddenly emerging into sunlight and confronting the Treasury — a moment engineered to overwhelm the senses. 
+              Pebble Beach offered its own modern version of arrival. 
+              Guests wound their way along 17-Mile Drive, ocean appearing and disappearing between cliffs and trees, before finally arriving at manicured greens perched above crashing surf. 
+              Different centuries, different materials, but the same mastery of spectacle.
+              Both places also thrived because of wealth in motion. 
+              Petra prospered from caravans carrying incense, silk, spices, and precious goods across ancient trade routes. 
+              Pebble Beach flourished through modern migrations of money and status — executives, celebrities, athletes, and financiers gathering along one of the most desirable stretches of coastline in North America. 
+              In each case, exclusivity itself became part of the attraction.
+              And perhaps that is the timeless truth connecting them.
+              Human beings have always created sanctuaries for the privileged — places removed from ordinary existence where beauty is elevated, discomfort minimized, and life made to feel slightly more extraordinary than reality elsewhere. 
+              Petra carved that dream into desert stone. 
+              Pebble Beach sculpted it into coastline and fairways. 
+              But beneath the centuries separating them, the impulse remained exactly the same.
+              And standing at Millbrook years later, I recognised that same feeling again.
+              It was a feeling I’d missed - a feeling I now yearned to immerse myself in.
             </p>
 
           </div>
