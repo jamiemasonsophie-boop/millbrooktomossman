@@ -145,7 +145,7 @@ function AboutPage() {
             </p>
 
             <p>
-              What started at a luxury golf resort back in 1993, evolved into
+              What started at a luxury golf resort back in 1993 evolved into
               an extraordinary global journey through love, loss, reinvention
               and deeply personal challenges.
             </p>
@@ -157,13 +157,13 @@ function AboutPage() {
             </p>
 
             <p>
-              Jim Fraser is a New Zealand–born writer whose life journey has
+              Jim Fraser is a New Zealand-born writer whose life journey has
               taken him from Auckland to Queenstown, Sydney and ultimately the
               tropical frontier of Far North Queensland.
             </p>
 
             <p>
-              From Millbrook to Mossman is Jim’s first book.
+              From Millbrook to Mossman is Jim's first book.
             </p>
 
             <p>
@@ -209,7 +209,7 @@ function BookPage() {
             <p>
               A truly international tale covering entrepreneurship,
               relationships, reinvention and survival, this memoir offers a
-              deeply personal account of one man’s pursuit of meaning.
+              deeply personal account of one man's pursuit of meaning.
             </p>
           </div>
 
@@ -269,9 +269,9 @@ function GalleryPage() {
 function ExcerptPage() {
   return (
     <section className="min-h-screen bg-black px-6 py-24">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
             Memoir Excerpt
           </p>
@@ -280,108 +280,315 @@ function ExcerptPage() {
             Read a Sample
           </h2>
 
-          <p className="text-xl text-stone-400 max-w-2xl mx-auto">
+          <p className="text-xl text-stone-400 max-w-2xl mx-auto leading-relaxed">
             A glimpse into the deeply personal journey behind
             From Millbrook to Mossman.
           </p>
         </div>
 
-        <div className="bg-stone-900 border border-stone-800 rounded-3xl p-10 md:p-14 shadow-2xl">
+        <div className="bg-stone-900 border border-stone-800 rounded-3xl p-10 md:p-16 shadow-2xl">
 
-          <h3 className="text-3xl font-semibold mb-10 text-white">
+          <h3 className="text-3xl font-semibold mb-12 text-white">
             Chapter One
           </h3>
 
-          <div className="space-y-8 text-lg leading-9 text-stone-300">
+          <div className="space-y-6 text-xl leading-relaxed text-stone-300 max-w-3xl mx-auto">
 
             <p>
-              Years earlier, during a stopover in Maui, I’d met a woman named Noelle.
-              She was crewing aboard an ocean-going yacht, a Swan 54’ owned by an L.A. television producer named Chuck. 
+              Years earlier, during a stopover in Maui, I'd met a woman named Noelle.
+            </p>
+
+            <p>
+              She was crewing aboard an ocean-going yacht, a Swan 54' owned by an L.A. television producer named Chuck.
+            </p>
+
+            <p>
               She was California distilled - sun-bronzed skin, white teeth, an ease that felt far more inherited than learned.
+            </p>
+
+            <p>
               Exactly the way The Beach Boys wished all girls could be back on their 1965 hit record.
+            </p>
+
+            <p>
               We met beneath the Banyan tree outside the Pioneer Hotel in Lahaina.
-              “Hang loose,” she said, flashing me a shaka, smiling like it was more than a greeting.
+            </p>
+
+            <p>
+              "Hang loose," she said, flashing me a shaka, smiling like it was more than a greeting.
             </p>
 
             <p>
               We fell into rhythm quickly.
-              Time loosened as days together stretched. 
-              She introduced me to blazing on Maui Wowie, to tripping on Magic ‘shrooms, and to a slower, more fluid way of moving through the world. 
-              We drove the sinuous coast road out to Hana in a cheap convertible - music loud, jungle pressing in, Noelle standing on her seat as I drove, dancing to Bon Jovi, waving at the passing schoolkids like the whole island belonged to her.
+            </p>
+
+            <p>
+              Time loosened as days together stretched.
+            </p>
+
+            <p>
+              She introduced me to blazing on Maui Wowie, to tripping on Magic 'shrooms, and to a slower, more fluid way of moving through the world.
+            </p>
+
+            <p>
+              We drove the sinuous coast road out to Hana in a cheap convertible - music loud, jungle pressing in, Noelle standing on her seat as I drove, dancing to Bon Jovi, waving at passing schoolkids like the whole island belonged to her.
+            </p>
+
+            <p>
               She had a way of looking at me that made everything feel heightened. Immediate.
-              I didn’t have language for it then, but something was shifting - subtly, but permanently.
+            </p>
+
+            <p>
+              I didn't have language for it then, but something was shifting - subtly, but permanently.
+            </p>
+
+            <p>
               Leaving her was far harder than I expected.
-              She was sailing back to San Fran. 
+            </p>
+
+            <p>
+              She was sailing back to San Fran.
+            </p>
+
+            <p>
               I was heading to London.
-              “You should come to Santa Cruz on your way back,” she said on our last night together, sitting barefoot at the marina. 
-              “Let me show you the real California.”
+            </p>
+
+            <p>
+              "You should come to Santa Cruz on your way back," she said on our last night together, sitting barefoot at the marina.
+            </p>
+
+            <p>
+              "Let me show you the real California."
+            </p>
+
+            <p>
               So, I did.
             </p>
 
             <p>
               Three months later, after Europe, I changed my flight home and flew straight into San Francisco with little money and no real plan beyond seeing her again.
+            </p>
+
+            <p>
               She picked me up from the airport and we drove down to her small beachside apartment in Santa Cruz.
-              What followed felt less like a trip, and more like slipping into an alternate version of life - beach volleyball, lazy days hanging out on the pier, driving up and down the P.C.H. exploring, nights at the surf-bar where she worked.
-              The place ran on rhythm - laughter, clinking glasses, half-finished pitchers of chilled margaritas sweating in low light. 
-              I’d sit at the bar while she worked, watching the room move around me.
+            </p>
+
+            <p>
+              What followed felt less like a trip, and more like slipping into an alternate version of life.
+            </p>
+
+            <p>
+              Beach volleyball. Lazy days hanging out on the pier. Driving up and down the P.C.H. exploring. Nights at the surf bar where she worked.
+            </p>
+
+            <p>
+              The place ran on rhythm - laughter, clinking glasses, half-finished pitchers of chilled margaritas sweating in low light.
+            </p>
+
+            <p>
+              I'd sit at the bar while she worked, watching the room move around me.
+            </p>
+
+            <p>
               People took an interest.
-              “Hey - come meet Noelle’s friend from NooZeeland!”
-              It wasn’t anything I’d done. It was how I sounded.
+            </p>
+
+            <p>
+              "Hey - come meet Noelle's friend from NooZeeland!"
+            </p>
+
+            <p>
+              It wasn't anything I'd done.
+            </p>
+
+            <p>
+              It was how I sounded.
+            </p>
+
+            <p>
               My accent - unremarkable at home - became a curiosity. A small performance.
-              “Go on,” they’d say. “Say something.”
+            </p>
+
+            <p>
+              "Go on," they'd say. "Say something."
+            </p>
+
+            <p>
               So, I would.
-              They’d laugh, repeat words back to me, try them on like they were testing a new accent of their own.
-              I played along. 
-              It was easier than resisting it. 
+            </p>
+
+            <p>
+              They'd laugh, repeat words back to me, try them on like they were testing a new accent of their own.
+            </p>
+
+            <p>
+              I played along.
+            </p>
+
+            <p>
+              It was easier than resisting it.
+            </p>
+
+            <p>
               But there was something quietly disorienting about being reduced, even harmlessly, to the way you sounded.
-              Still, those nights had a pull. 
-              A looseness. 
-              A sense that identity wasn’t fixed - that it could shift depending on where you stood, and who you stood among.
+            </p>
+
+            <p>
+              Still, those nights had a pull.
+            </p>
+
+            <p>
+              A looseness.
+            </p>
+
+            <p>
+              A sense that identity wasn't fixed - that it could shift depending on where you stood, and who you stood among.
             </p>
 
             <p>
               We spent the next few weeks together.
+            </p>
+
+            <p>
               Drove south to Carmel, then on to Monterey, finishing at Pebble Beach.
+            </p>
+
+            <p>
               I remember standing there, cliffs falling into the Pacific, the golf course carved into the coastline with absolute confidence.
-              “This is obscene,” I said.
-              “In a good way?” she asked.
-              “In the best way.”
-              It wasn’t just the setting.
+            </p>
+
+            <p>
+              "This is obscene," I said.
+            </p>
+
+            <p>
+              "In a good way?" she asked.
+            </p>
+
+            <p>
+              "In the best way."
+            </p>
+
+            <p>
+              It wasn't just the setting.
+            </p>
+
+            <p>
               It was the intention behind it.
-              These places weren’t accidental. 
-              They were constructed - carefully designed environments that allowed people to step, briefly, into a different version of themselves – just as I was doing.
+            </p>
+
+            <p>
+              These places weren't accidental.
+            </p>
+
+            <p>
+              They were carefully designed environments that allowed people to step briefly into a different version of themselves - just as I was doing.
+            </p>
+
+            <p>
               There was something strangely familiar about Pebble Beach.
-              Not in its architecture or geography, but in the feeling it created — the quiet understanding that this was a place designed for people who had already conquered the practical concerns of ordinary life and now sought only beauty, exclusivity, and experience.
+            </p>
+
+            <p>
+              Not in its architecture or geography, but in the feeling it created.
+            </p>
+
+            <p>
+              The quiet understanding that this was a place designed for people who had already conquered the practical concerns of ordinary life and now sought only beauty, exclusivity, and experience.
+            </p>
+
+            <p>
               In many ways, it reminded me of the ancient city of Petra in Southern Jordan.
-              Separated by two thousand years, perhaps, and built in utterly different landscapes, undeniably, but both existed as meeting places and playgrounds for the wealthy and influential of their eras. 
-              Petra rose from the desert as a hidden kingdom of astonishing grandeur, its rose-red facades carved directly into sheer canyon walls to impress traders, nobles, and dignitaries arriving from distant civilizations. 
-              Pebble Beach achieved the same effect through different means — dramatic coastline, immaculate fairways, cypress trees bent by Pacific winds, and an atmosphere so carefully curated it felt almost theatrical.
-              Neither place was built merely for function. 
+            </p>
+
+            <p>
+              Separated by two thousand years and built in utterly different landscapes, both existed as meeting places and playgrounds for the wealthy and influential of their eras.
+            </p>
+
+            <p>
+              Petra rose from the desert as a hidden kingdom of astonishing grandeur, its rose-red facades carved directly into sheer canyon walls to impress traders, nobles, and dignitaries arriving from distant civilizations.
+            </p>
+
+            <p>
+              Pebble Beach achieved the same effect through different means - dramatic coastline, immaculate fairways, cypress trees bent by Pacific winds, and an atmosphere so carefully curated it felt almost theatrical.
+            </p>
+
+            <p>
+              Neither place was built merely for function.
+            </p>
+
+            <p>
               They were built to evoke emotion.
             </p>
 
             <p>
-              Petra understood the power of anticipation. 
-              Travelers would move through the narrow darkness of the Siq before suddenly emerging into sunlight and confronting the Treasury — a moment engineered to overwhelm the senses. 
-              Pebble Beach offered its own modern version of arrival. 
-              Guests wound their way along 17-Mile Drive, ocean appearing and disappearing between cliffs and trees, before finally arriving at manicured greens perched above crashing surf. 
-              Different centuries, different materials, but the same mastery of spectacle.
-              Both places also thrived because of wealth in motion. 
-              Petra prospered from caravans carrying incense, silk, spices, and precious goods across ancient trade routes. 
-              Pebble Beach flourished through modern migrations of money and status — executives, celebrities, athletes, and financiers gathering along one of the most desirable stretches of coastline in North America. 
+              Petra understood the power of anticipation.
+            </p>
+
+            <p>
+              Travelers moved through the narrow darkness of the Siq before suddenly emerging into sunlight and confronting the Treasury - a moment engineered to overwhelm the senses.
+            </p>
+
+            <p>
+              Pebble Beach offered its own modern version of arrival.
+            </p>
+
+            <p>
+              Guests wound their way along 17-Mile Drive, ocean appearing and disappearing between cliffs and trees, before finally arriving at manicured greens perched above crashing surf.
+            </p>
+
+            <p>
+              Different centuries. Different materials. The same mastery of spectacle.
+            </p>
+
+            <p>
+              Both places thrived because of wealth in motion.
+            </p>
+
+            <p>
+              Petra prospered from caravans carrying incense, silk, spices, and precious goods across ancient trade routes.
+            </p>
+
+            <p>
+              Pebble Beach flourished through modern migrations of money and status - executives, celebrities, athletes, and financiers gathering along one of the most desirable stretches of coastline in North America.
+            </p>
+
+            <p>
               In each case, exclusivity itself became part of the attraction.
+            </p>
+
+            <p>
               And perhaps that is the timeless truth connecting them.
-              Human beings have always created sanctuaries for the privileged — places removed from ordinary existence where beauty is elevated, discomfort minimized, and life made to feel slightly more extraordinary than reality elsewhere. 
-              Petra carved that dream into desert stone. 
-              Pebble Beach sculpted it into coastline and fairways. 
+            </p>
+
+            <p>
+              Human beings have always created sanctuaries for the privileged - places removed from ordinary existence where beauty is elevated, discomfort minimized, and life made to feel slightly more extraordinary than reality elsewhere.
+            </p>
+
+            <p>
+              Petra carved that dream into desert stone.
+            </p>
+
+            <p>
+              Pebble Beach sculpted it into coastline and fairways.
+            </p>
+
+            <p>
               But beneath the centuries separating them, the impulse remained exactly the same.
+            </p>
+
+            <p>
               And standing at Millbrook years later, I recognised that same feeling again.
-              It was a feeling I’d missed - a feeling I now yearned to immerse myself in.
+            </p>
+
+            <p>
+              It was a feeling I'd missed - a feeling I now yearned to immerse myself in.
             </p>
 
           </div>
 
-          <div className="mt-14 text-center">
+          <div className="mt-16 text-center">
             <a
               href="https://www.amazon.com.au/dp/B0GX356C9C"
               target="_blank"
