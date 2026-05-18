@@ -229,7 +229,7 @@ function BookPage() {
 
 function GalleryPage() {
   const images = [
-    '/gallery-image-1.webp',
+    '/PaperbackBookWEBP.webp',
     '/Gallery1b.webp',
   ]
 
@@ -295,11 +295,11 @@ function ExcerptPage() {
           <div className="space-y-6 text-xl leading-relaxed text-stone-300 max-w-3xl mx-auto">
 
             <p>
-              Years earlier, during a stopover on Maui, I'd met a woman named Noelle.
+              During the late 80's, on a stopover in Maui, I'd met a woman named Noelle.
             </p>
 
             <p>
-              She was crewing aboard an ocean-going yacht, a Swan 54' owned by an L.A. television producer named Chuck.
+              She was crewing aboard an ocean-going ketch, a Swan 54' owned by an L.A. television producer named Chuck.
             </p>
 
             <p>
