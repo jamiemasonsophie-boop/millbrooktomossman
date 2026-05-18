@@ -102,7 +102,7 @@ function AboutPage() {
             </p>
 
             <p>
-              What started in the world of a luxury golf resort back in 1993 evolved into an extraordinary global journey through love, loss, reinvention and deeply personal challenges.
+              What started at a luxury golf resort back in 1993, evolved into an extraordinary global journey through love, loss, reinvention and deeply personal challenges.
             </p>
 
             <p>
@@ -174,8 +174,8 @@ function BookPage() {
 
 function GalleryPage() {
   const images = [
-    '/homepage-hero-background.webp',
-    '/gallery-image-2.webp',
+    '/gallery-image-1.webp',
+    '/Gallery1b.webp',
   ]
 
   return (
