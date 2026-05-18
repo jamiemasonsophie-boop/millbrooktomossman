@@ -162,7 +162,7 @@ function BookPage() {
 
 function GalleryPage() {
   const images = [
-    '/gallery-image-1.webp',
+    '/homepage-hero-background.webp',
     '/gallery-image-2.webp',
     '/book-cover-image.webp',
   ]
