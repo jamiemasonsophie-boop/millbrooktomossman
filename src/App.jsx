@@ -2,36 +2,184 @@ import { useState } from 'react'
 
 export default function App() {
   const [page, setPage] = useState('home')
+  const [selectedArticle, setSelectedArticle] = useState(null)
+
+  const journalArticles = [
+    {
+      title: 'Life at Millbrook Resort',
+      category: 'Luxury & Identity',
+      image:
+        'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000&auto=format&fit=crop',
+      excerpt:
+        'Luxury resorts are carefully designed emotional experiences — places where ambition, beauty and reinvention intersect.',
+      content: `
+Millbrook was never simply a golf resort.
+
+It was an atmosphere.
+
+An emotional architecture designed to momentarily suspend ordinary life.
+
+People arrived carrying invisible burdens — marriages under strain, careers built on relentless pressure, identities quietly unraveling beneath outward success.
+
+But once inside the gates, something shifted.
+
+The mountains softened people.
+
+The beauty altered them.
+
+And for brief moments, they became slightly different versions of themselves.
+
+That fascinated me.
+
+Luxury resorts are not really about luxury.
+
+They are about transformation.
+      `,
+    },
+
+    {
+      title: 'Reinvention After Collapse',
+      category: 'Personal Transformation',
+      image:
+        'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop',
+      excerpt:
+        'When identity collapses, reinvention stops being inspirational and becomes survival.',
+      content: `
+Collapse changes people.
+
+Not symbolically.
+
+Structurally.
+
+The person who emerges afterward is rarely the same as the person who entered the fire.
+
+There is a loneliness to rebuilding that few people understand.
+
+Friends disappear.
+
+Certainties vanish.
+
+And eventually you discover that reinvention is not motivational at all.
+
+It is adaptation.
+
+It is survival.
+
+And yet strangely, inside collapse exists freedom.
+
+Because once everything falls apart, you become dangerous in a different way.
+
+You stop fearing loss.
+      `,
+    },
+
+    {
+      title: 'Pebble Beach and Petra',
+      category: 'Luxury Travel',
+      image:
+        'https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2000&auto=format&fit=crop',
+      excerpt:
+        'Separated by two thousand years, Petra and Pebble Beach were both playgrounds for the privileged classes of their eras.',
+      content: `
+There was something strangely familiar about Pebble Beach.
+
+Not in its architecture or geography, but in the feeling it created.
+
+The understanding that this was a place designed for people who had already conquered the practical concerns of ordinary life and now sought beauty, exclusivity and emotional experience.
+
+In many ways, it reminded me of Petra.
+
+Both places were built around spectacle.
+
+Both were engineered to create emotional impact.
+
+And both existed as carefully curated environments where wealth could briefly transcend ordinary reality.
+      `,
+    },
+
+    {
+      title: 'Whistler and the Search for Meaning',
+      category: 'Travel & Identity',
+      image:
+        'https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=2000&auto=format&fit=crop',
+      excerpt:
+        'Mountain towns attract people searching for something beyond ordinary life.',
+      content: `
+Whistler attracted dreamers.
+
+Entrepreneurs.
+
+Escape artists.
+
+People attempting to outrun older versions of themselves.
+
+Mountain towns become emotional frontiers.
+
+Places where identity softens and reinvention feels possible.
+
+Perhaps that is why so many people arrive intending to stay only one season — and never leave.
+      `,
+    },
+  ]
 
   const renderPage = () => {
     switch (page) {
       case 'about':
         return <AboutPage />
-      case 'book':
+
+      case 'memoir':
         return <BookPage />
+
+      case 'journal':
+        return (
+          <JournalPage
+            articles={journalArticles}
+            setSelectedArticle={setSelectedArticle}
+          />
+        )
+
+      case 'article':
+        return (
+          <ArticlePage
+            article={selectedArticle}
+            setPage={setPage}
+          />
+        )
+
       case 'gallery':
         return <GalleryPage />
+
       case 'excerpt':
         return <ExcerptPage />
+
       case 'contact':
         return <ContactPage />
+
       default:
-        return <HomePage />
+        return (
+          <HomePage
+            setPage={setPage}
+            articles={journalArticles}
+            setSelectedArticle={setSelectedArticle}
+          />
+        )
     }
   }
 
   return (
-    <div className="min-h-screen bg-stone-950 text-white font-sans">
+    <div className="min-h-screen bg-black text-white font-sans">
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-md border-b border-stone-800">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
           <button
             onClick={() => setPage('home')}
-            className="text-2xl font-bold tracking-wide"
+            className="text-2xl font-semibold tracking-wide"
           >
             From Millbrook to Mossman
           </button>
 
-          <nav className="flex gap-6 text-sm uppercase tracking-wider">
+          <nav className="flex gap-6 text-sm uppercase tracking-[0.2em]">
+
             <button
               onClick={() => setPage('home')}
               className="hover:text-stone-300 transition-colors"
@@ -47,10 +195,17 @@ export default function App() {
             </button>
 
             <button
-              onClick={() => setPage('book')}
+              onClick={() => setPage('memoir')}
               className="hover:text-stone-300 transition-colors"
             >
-              Book
+              Memoir
+            </button>
+
+            <button
+              onClick={() => setPage('journal')}
+              className="hover:text-stone-300 transition-colors"
+            >
+              Journal
             </button>
 
             <button
@@ -73,6 +228,7 @@ export default function App() {
             >
               Contact
             </button>
+
           </nav>
         </div>
       </header>
@@ -84,39 +240,234 @@ export default function App() {
   )
 }
 
-function HomePage() {
+function HomePage({ setPage, articles, setSelectedArticle }) {
   return (
-    <section
-      className="relative min-h-screen flex items-center justify-center bg-cover bg-center px-6"
-      style={{
-        backgroundImage:
-          "linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.55)), url('/homepage-hero-background.webp')",
-      }}
-    >
-      <div className="max-w-5xl mx-auto text-center">
-        <p className="uppercase tracking-[0.4em] text-stone-700 text-sm mb-6 font-semibold">
-          Utterly Riveting and Completely Raw, this is a Memoir of Revelation,
-          Reinvention, Resilience and Recovery.
-        </p>
+    <>
+      <section
+        className="relative min-h-screen flex items-center justify-center bg-cover bg-center px-6"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('/homepage-hero-background.webp')",
+        }}
+      >
+        <div className="max-w-5xl mx-auto text-center">
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-stone-900">
-          From Millbrook to Mossman
-        </h1>
+          <p className="uppercase tracking-[0.4em] text-stone-300 text-sm mb-6">
+            A Memoir of Reinvention, Luxury, Collapse & Survival
+          </p>
 
-        <p className="text-xl md:text-2xl text-stone-800 max-w-3xl mx-auto leading-relaxed mb-10 font-medium">
-          An engrossing memoir spanning global entrepreneurship, travel, love,
-          loss, reinvention, and the relentless pursuit of purpose.
-        </p>
+          <h1 className="text-5xl md:text-7xl font-light leading-tight mb-8">
+            From Millbrook
+            <br />
+            to Mossman
+          </h1>
 
-        <a
-          href="https://www.amazon.com.au/dp/B0GX356C9C"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-black text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:scale-105 transition-transform"
-        >
-          Buy on Amazon
-        </a>
+          <p className="text-xl md:text-2xl text-stone-300 max-w-3xl mx-auto leading-relaxed mb-12">
+            An emotionally raw journey spanning luxury resorts,
+            international travel, entrepreneurship, love, loss,
+            reinvention and the relentless pursuit of identity.
+          </p>
+
+          <div className="flex flex-col md:flex-row gap-6 justify-center">
+
+            <a
+              href="https://www.amazon.com.au/dp/B0GX356C9C"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-black px-8 py-4 rounded-2xl text-lg font-semibold hover:scale-105 transition-transform"
+            >
+              Buy the Memoir
+            </a>
+
+            <button
+              onClick={() => setPage('journal')}
+              className="border border-white px-8 py-4 rounded-2xl text-lg hover:bg-white hover:text-black transition-all"
+            >
+              Explore Journal
+            </button>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-stone-950 px-6 py-28">
+        <div className="max-w-7xl mx-auto">
+
+          <div className="mb-20 text-center">
+            <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+              Featured Journal Essays
+            </p>
+
+            <h2 className="text-5xl font-light mb-6">
+              Luxury, Identity & Reinvention
+            </h2>
+
+            <p className="text-stone-400 text-xl max-w-3xl mx-auto">
+              Personal reflections exploring elite resort culture,
+              emotional collapse, travel, wealth, transformation and survival.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+
+            {articles.slice(0, 2).map((article, idx) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  setSelectedArticle(article)
+                  setPage('article')
+                }}
+                className="group text-left bg-black border border-stone-800 rounded-3xl overflow-hidden hover:border-stone-600 transition-all"
+              >
+
+                <div className="overflow-hidden h-[420px]">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+
+                <div className="p-10">
+
+                  <p className="uppercase tracking-[0.25em] text-xs text-stone-500 mb-4">
+                    {article.category}
+                  </p>
+
+                  <h3 className="text-4xl font-light mb-6">
+                    {article.title}
+                  </h3>
+
+                  <p className="text-stone-400 text-lg leading-relaxed">
+                    {article.excerpt}
+                  </p>
+
+                </div>
+              </button>
+            ))}
+
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
+
+function JournalPage({ articles, setSelectedArticle }) {
+  return (
+    <section className="min-h-screen bg-black px-6 py-24">
+
+      <div className="max-w-7xl mx-auto">
+
+        <div className="text-center mb-20">
+
+          <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+            Journal
+          </p>
+
+          <h1 className="text-6xl font-light mb-6">
+            Stories, Reflections & Essays
+          </h1>
+
+          <p className="text-stone-400 text-xl max-w-3xl mx-auto leading-relaxed">
+            Explorations of luxury, identity, reinvention,
+            travel, ambition, emotional collapse and survival.
+          </p>
+
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-10">
+
+          {articles.map((article, idx) => (
+            <button
+              key={idx}
+              onClick={() => setSelectedArticle(article)}
+              className="group text-left bg-stone-950 border border-stone-800 rounded-3xl overflow-hidden hover:border-stone-600 transition-all"
+            >
+
+              <div className="overflow-hidden h-[420px]">
+                <img
+                  src={article.image}
+                  alt={article.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+
+              <div className="p-10">
+
+                <p className="uppercase tracking-[0.25em] text-xs text-stone-500 mb-4">
+                  {article.category}
+                </p>
+
+                <h2 className="text-4xl font-light mb-6">
+                  {article.title}
+                </h2>
+
+                <p className="text-stone-400 text-lg leading-relaxed mb-6">
+                  {article.excerpt}
+                </p>
+
+                <div className="text-sm uppercase tracking-[0.2em] text-stone-500">
+                  Read Essay →
+                </div>
+
+              </div>
+            </button>
+          ))}
+
+        </div>
       </div>
+    </section>
+  )
+}
+
+function ArticlePage({ article, setPage }) {
+  if (!article) return null
+
+  return (
+    <section className="min-h-screen bg-black text-white">
+
+      <div className="relative h-[60vh] overflow-hidden">
+
+        <img
+          src={article.image}
+          alt={article.title}
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
+
+        <div className="relative z-10 max-w-5xl mx-auto px-6 h-full flex flex-col justify-end pb-20">
+
+          <p className="uppercase tracking-[0.3em] text-stone-400 text-sm mb-4">
+            {article.category}
+          </p>
+
+          <h1 className="text-6xl md:text-7xl font-light leading-tight max-w-4xl">
+            {article.title}
+          </h1>
+
+        </div>
+      </div>
+
+      <article className="max-w-3xl mx-auto px-6 py-24">
+
+        <div className="whitespace-pre-line text-stone-300 text-2xl leading-[2.1] font-light">
+          {article.content}
+        </div>
+
+        <div className="mt-20 pt-10 border-t border-stone-800">
+
+          <button
+            onClick={() => setPage('journal')}
+            className="text-stone-400 hover:text-white transition-colors"
+          >
+            ← Back to Journal
+          </button>
+
+        </div>
+
+      </article>
     </section>
   )
 }
@@ -125,53 +476,45 @@ function AboutPage() {
   return (
     <section className="min-h-screen bg-stone-900 px-6 py-24">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+
         <img
           src="/about-page-portrait.webp"
           alt="Author"
-          className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
+          className="rounded-3xl shadow-2xl w-full h-[650px] object-cover"
         />
 
         <div>
-          <h2 className="text-5xl font-bold mb-8">
+
+          <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
             About the Author
+          </p>
+
+          <h2 className="text-5xl font-light mb-10">
+            Jim Fraser
           </h2>
 
           <div className="space-y-6 text-lg text-stone-300 leading-relaxed">
+
             <p>
-              From the alpine regions of New Zealand to international landscapes
-              spanning Europe, The United States, Canada, and Australia, this
-              memoir chronicles a life shaped by ambition, risk,
-              transformation and resilience.
+              From the alpine landscapes of New Zealand to international journeys
+              spanning Europe, North America and Australia, this memoir traces
+              a life shaped by ambition, reinvention and resilience.
             </p>
 
             <p>
-              What started at a luxury golf resort back in 1993 evolved into
-              an extraordinary global journey through love, loss, reinvention
-              and deeply personal challenges.
+              What began at a luxury golf resort in 1993 evolved into a deeply
+              personal global journey through entrepreneurship, love, collapse,
+              recovery and transformation.
             </p>
 
             <p>
-              From Millbrook to Mossman captures both the victories and the
-              failures, including the darker moments that ultimately forged a
-              new understanding of purpose, identity and survival.
+              From Millbrook to Mossman explores both triumph and devastation —
+              including the darker emotional realities that ultimately forged a
+              new understanding of identity and purpose.
             </p>
 
-            <p>
-              Jim Fraser is a New Zealand-born writer whose life journey has
-              taken him from Auckland to Queenstown, Sydney and ultimately the
-              tropical frontier of Far North Queensland.
-            </p>
-
-            <p>
-              From Millbrook to Mossman is Jim's first book.
-            </p>
-
-            <p>
-              Jim now divides his time between writing, creative projects and
-              producing online content supporting those living with Multiple
-              Sclerosis.
-            </p>
           </div>
+
         </div>
       </div>
     </section>
@@ -181,36 +524,42 @@ function AboutPage() {
 function BookPage() {
   return (
     <section className="min-h-screen bg-black px-6 py-24">
+
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
         <div className="bg-stone-900 rounded-3xl p-10 border border-stone-800">
+
           <img
             src="/book-cover-image.webp"
-            alt="From Millbrook to Mossman Book Cover"
+            alt="Book Cover"
             className="rounded-2xl shadow-2xl w-full"
           />
+
         </div>
 
         <div>
+
           <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
             The Memoir
           </p>
 
-          <h2 className="text-5xl font-bold mb-8">
-            An Unforgettable Journey
+          <h2 className="text-5xl font-light mb-8">
+            An Extraordinary Journey
           </h2>
 
           <div className="space-y-6 text-lg text-stone-300 leading-relaxed mb-10">
+
             <p>
-              Honest, raw and revealing, From Millbrook to Mossman explores the
-              emotional cost of ambition and the courage required to rebuild
-              when life falls apart.
+              Honest, cinematic and emotionally raw,
+              From Millbrook to Mossman explores the emotional
+              cost of ambition and the courage required to rebuild.
             </p>
 
             <p>
-              A truly international tale covering entrepreneurship,
-              relationships, reinvention and survival, this memoir offers a
-              deeply personal account of one man's pursuit of meaning.
+              A global memoir spanning luxury resort culture,
+              entrepreneurship, relationships, travel and survival.
             </p>
+
           </div>
 
           <a
@@ -219,8 +568,9 @@ function BookPage() {
             rel="noopener noreferrer"
             className="inline-block bg-white text-black px-8 py-4 rounded-2xl text-lg font-bold hover:scale-105 transition-transform"
           >
-            Order Your Copy Today!
+            Order Your Copy
           </a>
+
         </div>
       </div>
     </section>
@@ -236,31 +586,32 @@ function GalleryPage() {
 
   return (
     <section className="min-h-screen bg-stone-950 px-6 py-24">
+
       <div className="max-w-7xl mx-auto">
+
         <div className="text-center mb-16">
+
           <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
             Gallery
           </p>
 
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-5xl font-light mb-6">
             Places & Moments
           </h2>
 
-          <p className="text-xl text-stone-400 max-w-3xl mx-auto">
-            A totally engrossing journey inspired by the people, landscapes,
-            experiences and emotions behind the memoir.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
+
           {images.map((image, idx) => (
             <img
               key={idx}
               src={image}
               alt="Gallery"
-              className="rounded-3xl shadow-2xl h-[400px] w-full object-cover hover:scale-[1.02] transition-transform"
+              className="rounded-3xl shadow-2xl h-[420px] w-full object-cover hover:scale-[1.02] transition-transform"
             />
           ))}
+
         </div>
       </div>
     </section>
@@ -270,326 +621,48 @@ function GalleryPage() {
 function ExcerptPage() {
   return (
     <section className="min-h-screen bg-black px-6 py-24">
+
       <div className="max-w-5xl mx-auto">
 
         <div className="text-center mb-20">
+
           <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
             Memoir Excerpt
           </p>
 
-          <h2 className="text-5xl font-bold mb-6 text-white">
+          <h2 className="text-5xl font-light mb-6">
             Read a Sample
           </h2>
 
-          <p className="text-xl text-stone-400 max-w-2xl mx-auto leading-relaxed">
-            A glimpse into the deeply personal journey behind
-            From Millbrook to Mossman.
-          </p>
         </div>
 
         <div className="bg-stone-900 border border-stone-800 rounded-3xl p-10 md:p-16 shadow-2xl">
 
-          <h3 className="text-3xl font-semibold mb-12 text-white">
-            Chapter Two - New Beginnings.
-          </h3>
+          <div className="space-y-8 text-xl leading-relaxed text-stone-300 max-w-3xl mx-auto">
 
-          <div className="space-y-6 text-xl leading-relaxed text-stone-300 max-w-3xl mx-auto">
-
-            <p>
-              During the late 80's, on a stopover in Maui, I'd met a woman named Noelle.
-            </p>
-
-            <p>
-              She was crewing aboard an ocean-going ketch, a Swan 54' owned by an L.A. television producer named Chuck.
-            </p>
-
-            <p>
-              She was California distilled - sun-bronzed skin, white teeth, blessed with an ease that felt far more inherited than learned.
-            </p>
-
-            <p>
-              Exactly the way The Beach Boys had wished all girls could be back on their 1965 hit record.
-            </p>
-
-            <p>
-              We met beneath the branches of the sprawling Banyan tree outside the Pioneer Hotel in Lahaina.
-            </p>
-
-            <p>
-              "Hang loose," she said, flashing me a shaka, smiling warmly like it was more than a greeting.
-            </p>
-
-            <p>
-              We fell into rhythm quickly.
-            </p>
-
-            <p>
-              Time loosened as days together stretched.
-            </p>
-
-            <p>
-              She introduced me to blazing on Maui Wowie, to tripping on Magic 'shrooms, and to a slower, more fluid way of moving through the world.
-            </p>
-
-            <p>
-              We drove the sinuous coast road out to heavenly Hana in a cheap convertible - music loud, jungle pressing in, Noelle standing on her seat as I drove, dancing to Bon Jovi, waving at passing schoolkids like the whole island belonged to her.
-            </p>
-
-            <p>
-              She had a way of looking at me that made everything feel heightened. More immediate.
-            </p>
-
-            <p>
-              I didn't have language for it then, but something in my psyche was shifting - subtly, but permanently.
-            </p>
-
-            <p>
-              Leaving her was far harder than I expected.
-            </p>
-
-            <p>
-              She was sailing back to San Fran.
-            </p>
-
-            <p>
-              I was heading to London.
-            </p>
-
-            <p>
-              "You should come to Santa Cruz on your way back," she said on our last night together, sitting barefoot at the marina.
-            </p>
-
-            <p>
-              "Let me show you the real California."
-            </p>
-
-            <p>
-              So, I did.
-            </p>
-
-            <p>
-              Three months later, after driving around Europe in a van, I changed my flight home and flew straight into San Francisco with little money and no real plan beyond seeing her again.
-            </p>
-
-            <p>
-              She picked me up from the airport and we drove down to her small beachside apartment in Santa Cruz.
-            </p>
-
-            <p>
-              What followed felt less like a trip, and more like slipping into an alternate version of life.
-            </p>
-
-            <p>
-              Beach volleyball. Lazy days hanging out on the pier. Driving up and down the P.C.H. exploring. Nights at the surf bar where she worked.
-            </p>
-
-            <p>
-              The place ran on rhythm - laughter, clinking glasses and half-finished pitchers of chilled margaritas sweating in low light.
-            </p>
-
-            <p>
-              I'd sit at the bar while she worked, watching the room move around me, slowly becoming a 'local' - until I opened my mouth anyway.
-            </p>
-
-            <p>
-              People took an interest.
-            </p>
-
-            <p>
-              "Hey - come meet Noelle's friend from NooZeeland!"
-            </p>
-
-            <p>
-              It wasn't anything I'd done.
-            </p>
-
-            <p>
-              It was how I sounded.
-            </p>
-
-            <p>
-              My accent - unremarkable at home - became a curiosity. A small performance.
-            </p>
-
-            <p>
-              "Go on," they'd say. "Say something."
-            </p>
-
-            <p>
-              So, I would.
-            </p>
-
-            <p>
-              They'd laugh, repeat words back to me, try them on like they were testing a new accent of their own.
-            </p>
-
-            <p>
-              I played along.
-            </p>
-
-            <p>
-              It was easier than resisting it.
-            </p>
-
-            <p>
-              But there was something quietly disorienting about being reduced, even harmlessly, to the way you sounded.
-            </p>
-
-            <p>
-              Still, those nights had a pull.
-            </p>
-
-            <p>
-              A looseness.
-            </p>
-
-            <p>
-              A sense that identity wasn't fixed - that it could shift depending on where you stood, and who you stood among.
-            </p>
-
-            <p>
-              We spent the next few weeks together.
-            </p>
-
-            <p>
-              Drove south to Carmel, then on to Monterey, finishing at Pebble Beach.
-            </p>
-
-            <p>
-              I remember standing there, cliffs falling into the Pacific, the golf course carved into the coastline with absolute confidence.
-            </p>
-
-            <p>
-              "This is obscene," I said.
-            </p>
-
-            <p>
-              "In a good way?" she asked.
-            </p>
-
-            <p>
-              "In the best way."
-            </p>
-
-            <p>
-              It wasn't just the setting.
-            </p>
-
-            <p>
-              It was the intention behind it.
-            </p>
-
-            <p>
-              These places weren't accidental.
-            </p>
-
-            <p>
-              They were carefully designed environments that allowed people to step briefly into a different version of themselves - just as I was doing.
-            </p>
-
-            <p>
-              There was something strangely familiar about Pebble Beach.
-            </p>
-
-            <p>
-              Not in its architecture or geography, but in the feeling it created.
-            </p>
-
-            <p>
-              The quiet understanding that this was a place designed for people who had already conquered the practical concerns of ordinary life and now sought only beauty, exclusivity, and experience.
-            </p>
-
-            <p>
-              In many ways, it reminded me of the ancient city of Petra in Southern Jordan.
-            </p>
-
-            <p>
-              Separated by two thousand years and built in utterly different landscapes, both existed as meeting places and playgrounds for the wealthy and influential of their eras.
-            </p>
-
-            <p>
-              Petra rose from the desert as a hidden kingdom of astonishing grandeur, its rose-red facades carved directly into sheer canyon walls to impress traders, nobles, and dignitaries arriving from distant civilizations.
-            </p>
-
-            <p>
-              Pebble Beach achieved the same effect through different means - dramatic coastline, immaculate fairways, cypress trees bent by Pacific winds, and an atmosphere so carefully curated it felt almost theatrical.
-            </p>
-
-            <p>
-              Neither place was built merely for function.
-            </p>
-
-            <p>
-              They were built to evoke emotion.
-            </p>
-
-            <p>
-              Petra understood the power of anticipation.
-            </p>
-
-            <p>
-              Travelers moved through the narrow darkness of the Siq before suddenly emerging into sunlight and confronting the Treasury - a moment engineered to overwhelm the senses.
-            </p>
-
-            <p>
-              Pebble Beach offered its own modern version of arrival.
-            </p>
-
-            <p>
-              Guests wound their way along 17-Mile Drive, ocean appearing and disappearing between cliffs and trees, before finally arriving at manicured greens perched above crashing surf.
-            </p>
-
-            <p>
-              Different centuries. Different materials. The same mastery of spectacle.
-            </p>
-
-            <p>
-              Both places thrived because of wealth in motion.
-            </p>
-
-            <p>
-              Petra prospered from caravans carrying incense, silk, spices, and precious goods across ancient trade routes.
-            </p>
-
-            <p>
-              Pebble Beach flourished through modern migrations of money and status - executives, celebrities, athletes, and financiers gathering along one of the most desirable stretches of coastline in North America.
-            </p>
-
-            <p>
-              In each case, exclusivity itself became part of the attraction.
-            </p>
-
-            <p>
-              And perhaps that is the timeless truth connecting them.
-            </p>
-
-            <p>
-              Human beings have always created sanctuaries for the privileged - places removed from ordinary existence where beauty is elevated, discomfort minimized, and life made to feel slightly more extraordinary than reality elsewhere.
-            </p>
-
-            <p>
-              Petra carved that dream into desert stone.
-            </p>
-
             <p>
-              Pebble Beach sculpted it into coastline and fairways.
+              During the late 80's, on a stopover in Maui,
+              I'd met a woman named Noelle.
             </p>
 
             <p>
-              But beneath the centuries separating them, the impulse remained exactly the same.
+              She was California distilled — sun-bronzed skin,
+              white teeth, effortless ease and warmth.
             </p>
 
             <p>
-              And standing at Millbrook years later, I recognised that same feeling again.
+              We drove the coast road to Hana in a cheap convertible,
+              music loud, jungle pressing in around us.
             </p>
 
             <p>
-              It was a feeling I'd missed - a feeling I now yearned to immerse myself in.
+              It felt less like travel and more like entering an alternate version of life.
             </p>
 
           </div>
 
           <div className="mt-16 text-center">
+
             <a
               href="https://www.amazon.com.au/dp/B0GX356C9C"
               target="_blank"
@@ -598,6 +671,7 @@ function ExcerptPage() {
             >
               Continue Reading on Amazon
             </a>
+
           </div>
 
         </div>
@@ -615,27 +689,31 @@ function ContactPage() {
           "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('/gallery-image-2.webp')",
       }}
     >
+
       <div className="max-w-3xl w-full bg-stone-900/80 backdrop-blur-sm border border-stone-700 rounded-3xl p-10">
+
         <p className="uppercase tracking-[0.3em] text-stone-300 text-sm mb-4 text-center">
           Contact
         </p>
 
-        <h2 className="text-5xl font-bold mb-10 text-center text-white">
+        <h2 className="text-5xl font-light mb-10 text-center text-white">
           Get In Touch
         </h2>
 
         <p className="text-center text-stone-200 mb-10 text-lg">
-          For media enquiries, reader feedback, or speaking opportunities,
-          please get in touch.
+          For media enquiries, reader feedback, interviews
+          or speaking opportunities.
         </p>
 
         <div className="text-center">
+
           <a
-            href="mailto:jamiemasonsophie@gmail.com"
+            href="mailto:your@email.com"
             className="inline-block bg-white text-black px-8 py-4 rounded-2xl font-bold text-lg hover:scale-[1.02] transition-transform"
           >
             Send Message
           </a>
+
         </div>
       </div>
     </section>
