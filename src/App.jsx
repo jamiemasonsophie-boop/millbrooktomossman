@@ -122,6 +122,12 @@ Perhaps that is why so many people arrive intending to stay only one season — 
     },
   ]
 
+  const openArticle = (article) => {
+    setSelectedArticle(article)
+    setPage('article')
+    window.scrollTo(0, 0)
+  }
+
   const renderPage = () => {
     switch (page) {
       case 'about':
@@ -134,7 +140,7 @@ Perhaps that is why so many people arrive intending to stay only one season — 
         return (
           <JournalPage
             articles={journalArticles}
-            setSelectedArticle={setSelectedArticle}
+            openArticle={openArticle}
           />
         )
 
@@ -160,7 +166,7 @@ Perhaps that is why so many people arrive intending to stay only one season — 
           <HomePage
             setPage={setPage}
             articles={journalArticles}
-            setSelectedArticle={setSelectedArticle}
+            openArticle={openArticle}
           />
         )
     }
@@ -172,7 +178,10 @@ Perhaps that is why so many people arrive intending to stay only one season — 
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
 
           <button
-            onClick={() => setPage('home')}
+            onClick={() => {
+              setPage('home')
+              window.scrollTo(0, 0)
+            }}
             className="text-2xl font-semibold tracking-wide"
           >
             From Millbrook to Mossman
@@ -180,54 +189,26 @@ Perhaps that is why so many people arrive intending to stay only one season — 
 
           <nav className="flex gap-6 text-sm uppercase tracking-[0.2em]">
 
-            <button
-              onClick={() => setPage('home')}
-              className="hover:text-stone-300 transition-colors"
-            >
-              Home
-            </button>
-
-            <button
-              onClick={() => setPage('about')}
-              className="hover:text-stone-300 transition-colors"
-            >
-              About
-            </button>
-
-            <button
-              onClick={() => setPage('memoir')}
-              className="hover:text-stone-300 transition-colors"
-            >
-              Memoir
-            </button>
-
-            <button
-              onClick={() => setPage('journal')}
-              className="hover:text-stone-300 transition-colors"
-            >
-              Journal
-            </button>
-
-            <button
-              onClick={() => setPage('gallery')}
-              className="hover:text-stone-300 transition-colors"
-            >
-              Gallery
-            </button>
-
-            <button
-              onClick={() => setPage('excerpt')}
-              className="hover:text-stone-300 transition-colors"
-            >
-              Excerpt
-            </button>
-
-            <button
-              onClick={() => setPage('contact')}
-              className="hover:text-stone-300 transition-colors"
-            >
-              Contact
-            </button>
+            {[
+              ['Home', 'home'],
+              ['About', 'about'],
+              ['Memoir', 'memoir'],
+              ['Journal', 'journal'],
+              ['Gallery', 'gallery'],
+              ['Excerpt', 'excerpt'],
+              ['Contact', 'contact'],
+            ].map(([label, value]) => (
+              <button
+                key={value}
+                onClick={() => {
+                  setPage(value)
+                  window.scrollTo(0, 0)
+                }}
+                className="hover:text-stone-300 transition-colors"
+              >
+                {label}
+              </button>
+            ))}
 
           </nav>
         </div>
@@ -240,7 +221,7 @@ Perhaps that is why so many people arrive intending to stay only one season — 
   )
 }
 
-function HomePage({ setPage, articles, setSelectedArticle }) {
+function HomePage({ setPage, articles, openArticle }) {
   return (
     <>
       <section
@@ -280,7 +261,10 @@ function HomePage({ setPage, articles, setSelectedArticle }) {
             </a>
 
             <button
-              onClick={() => setPage('journal')}
+              onClick={() => {
+                setPage('journal')
+                window.scrollTo(0, 0)
+              }}
               className="border border-white px-8 py-4 rounded-2xl text-lg hover:bg-white hover:text-black transition-all"
             >
               Explore Journal
@@ -313,10 +297,7 @@ function HomePage({ setPage, articles, setSelectedArticle }) {
             {articles.slice(0, 2).map((article, idx) => (
               <button
                 key={idx}
-                onClick={() => {
-                  setSelectedArticle(article)
-                  setPage('article')
-                }}
+                onClick={() => openArticle(article)}
                 className="group text-left bg-black border border-stone-800 rounded-3xl overflow-hidden hover:border-stone-600 transition-all"
               >
 
@@ -353,7 +334,7 @@ function HomePage({ setPage, articles, setSelectedArticle }) {
   )
 }
 
-function JournalPage({ articles, setSelectedArticle }) {
+function JournalPage({ articles, openArticle }) {
   return (
     <section className="min-h-screen bg-black px-6 py-24">
 
@@ -381,7 +362,7 @@ function JournalPage({ articles, setSelectedArticle }) {
           {articles.map((article, idx) => (
             <button
               key={idx}
-              onClick={() => setSelectedArticle(article)}
+              onClick={() => openArticle(article)}
               className="group text-left bg-stone-950 border border-stone-800 rounded-3xl overflow-hidden hover:border-stone-600 transition-all"
             >
 
@@ -443,7 +424,7 @@ function ArticlePage({ article, setPage }) {
             {article.category}
           </p>
 
-          <h1 className="text-6xl md:text-7xl font-light leading-tight max-w-4xl">
+          <h1 className="text-5xl md:text-7xl font-light leading-tight max-w-4xl">
             {article.title}
           </h1>
 
@@ -452,14 +433,17 @@ function ArticlePage({ article, setPage }) {
 
       <article className="max-w-3xl mx-auto px-6 py-24">
 
-        <div className="whitespace-pre-line text-stone-300 text-2xl leading-[2.1] font-light">
+        <div className="whitespace-pre-line text-stone-300 text-xl md:text-2xl leading-[2.1] font-light">
           {article.content}
         </div>
 
         <div className="mt-20 pt-10 border-t border-stone-800">
 
           <button
-            onClick={() => setPage('journal')}
+            onClick={() => {
+              setPage('journal')
+              window.scrollTo(0, 0)
+            }}
             className="text-stone-400 hover:text-white transition-colors"
           >
             ← Back to Journal
@@ -715,6 +699,7 @@ function ContactPage() {
           </a>
 
         </div>
+
       </div>
     </section>
   )
