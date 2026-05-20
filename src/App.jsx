@@ -23,9 +23,9 @@ An emotional architecture designed to momentarily suspend ordinary life.
 
 People arrived carrying invisible burdens — marriages under strain, careers built on relentless pressure, identities quietly unraveling beneath outward success.
 
-But once inside the gates, something shifted.
+But once inside the gates, everything shifted.
 
-The mountains softened people.
+The majesty of the mountains softened people.
 
 The beauty altered them.
 
@@ -35,7 +35,7 @@ That fascinated me.
 
 Luxury resorts are not really about luxury.
 
-They are about transformation.
+They're about transformation.
       `,
     },
 
@@ -47,31 +47,30 @@ They are about transformation.
       excerpt:
         'When identity collapses, reinvention stops being inspirational and becomes a matter of survival.',
       content: `
-Trauma changes people.
+Traumatism changes people.
 
 Not symbolically.
 
 Structurally.
-
-The person who emerges afterward is rarely the same as the person who entered the fire.
+And the person who emerges afterward is rarely the same as the person who entered the fire.
 
 There is a loneliness to rebuilding that few people understand.
 
-Friends disappear.
+Friends often disappear.
 
-Certainties vanish.
+Certainties generally vanish.
 
 And eventually you discover that reinvention is not motivational at all.
 
-It is adaptation.
+It's a conduit to adaptation.
 
-It is survival.
+It's often a case of survival.
 
 And yet strangely, inside collapse exists freedom.
 
 Because once everything falls apart, you become dangerous in a different way.
 
-You stop fearing loss.
+You stop fearing loss and grow from it.
       `,
     },
 
