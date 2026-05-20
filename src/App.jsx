@@ -7,7 +7,7 @@ export default function App() {
   const journalArticles = [
     {
       title: 'Life at Millbrook Resort',
-      category: 'Luxury & Identity',
+      category: 'Luxury & Opportunity',
       image:
         'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000&auto=format&fit=crop',
       excerpt:
@@ -38,14 +38,14 @@ They are about transformation.
     },
 
     {
-      title: 'Reinvention After Collapse',
+      title: 'Reinvention After Trauma',
       category: 'Personal Transformation',
       image:
         'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop',
       excerpt:
-        'When identity collapses, reinvention stops being inspirational and becomes survival.',
+        'When identity collapses, reinvention stops being inspirational and becomes a matter of survival.',
       content: `
-Collapse changes people.
+Trauma changes people.
 
 Not symbolically.
 
@@ -98,24 +98,26 @@ And both existed as carefully curated environments where wealth could briefly tr
     },
 
     {
-      title: 'Whistler and the Search for Meaning',
+      title: 'Mossman and the Search for Meaning',
       category: 'Travel & Identity',
       image:
         'https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=2000&auto=format&fit=crop',
       excerpt:
-        'Mountain towns attract people searching for something beyond ordinary life.',
+        'Tropical rainforests attract people searching for something beyond ordinary life.',
       content: `
-Whistler attracted dreamers.
+The ancient Daintree attracts dreamers and escapees from all corners.
 
-Entrepreneurs.
+Off-grid, alternative-lifestyle communities.
 
-Escape artists.
+Loners, artisans, environmentalists and escape artists.
 
-People attempting to outrun older versions of themselves.
+People attempting to outrun the rat-race and discover new, more improved versions of themselves.
 
-Mountain towns become emotional frontiers.
+Rainforest settlements become emotional frontiers.
 
 Places where identity softens and reinvention feels possible.
+
+Where many look to the wet-season rains to wash away past selves or traumas.
 
 Perhaps that is why so many people arrive intending to stay only one season — and never leave.
       `,
