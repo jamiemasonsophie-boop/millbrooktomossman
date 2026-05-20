@@ -11,7 +11,7 @@ export default function App() {
      image:
       '/millbrook2.jpg',
       excerpt:
-        'Luxury resorts are carefully designed emotional experiences — places where ambition, beauty and reinvention intersect.',
+        'Luxury resorts are carefully designed emotional experiences — manicured, man-made environments where ambition, beauty and reinvention intersect.',
       content: `
 Millbrook was never simply a golf resort.
 
@@ -19,17 +19,17 @@ It was an atmosphere.
 
 An emotional architecture designed to momentarily suspend ordinary life.
 
-People arrived carrying invisible burdens — marriages under strain, careers built on relentless pressure, identities quietly unraveling beneath outward success.
+People often arrived carrying invisible burdens — marriages under strain, careers built on relentless pressure, identities quietly unraveling beneath outward success.
 
-But once inside the gates, everything shifted.
+But once inside the gates, everything changes.
 
-The majesty of the mountains softened people.
+The majesty of the mountains softens people.
 
-The beauty altered them.
+The beauty alters them.
 
-And for brief moments, they became slightly different versions of themselves.
+And for brief moments, they become slightly different versions of themselves.
 
-That fascinated me.
+That always fascinated me.
 
 Luxury resorts are not really about luxury.
 
@@ -45,11 +45,10 @@ They're about transformation.
       excerpt:
         'When identity collapses, reinvention stops being inspirational and becomes a matter of survival.',
       content: `
-Traumatism changes people.
+Trauma changes people.
 
-Not symbolically.
+Not symbolically - structurally.
 
-Structurally.
 And the person who emerges afterward is rarely the same as the person who entered the fire.
 
 There is a loneliness to rebuilding that few people understand.
@@ -62,9 +61,9 @@ And eventually you discover that reinvention is not motivational at all.
 
 It's a conduit to adaptation.
 
-It's often a case of survival.
+And like evolution itself - whose #1 rule is: adapt or become extinct - it's often a case of survival.
 
-And yet strangely, inside collapse exists freedom.
+And yet almost magically, after collapse, comes reinvention and eventual freedom.
 
 Because once everything falls apart, you become dangerous in a different way.
 
@@ -82,13 +81,13 @@ You stop fearing loss and grow from it.
       content: `
 There was something strangely familiar about Pebble Beach.
 
-Not in its architecture or geography, but in the feeling it created.
+Not in its architecture or breathtaking geography, but in the feeling it created.
 
 The understanding that this was a place designed for people who had already conquered the practical concerns of ordinary life and now sought beauty, exclusivity and emotional experience.
 
-In many ways, it reminded me of Petra.
+In many ways, it reminded me of the ancient city of Petra in Jordan.
 
-Both places were built around spectacle.
+Although thousands of years and thousands of miles apart, both places were built around spectacle.
 
 Both were engineered to create emotional impact.
 
