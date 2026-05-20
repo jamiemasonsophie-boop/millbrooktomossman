@@ -1,3 +1,6 @@
+# Updated App.jsx
+
+```jsx
 import { useState } from 'react'
 
 export default function App() {
@@ -9,7 +12,7 @@ export default function App() {
       title: 'Life at Millbrook Resort',
       category: 'Luxury & Opportunity',
       image:
-        'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=2000&auto=format&fit=crop',
       excerpt:
         'Luxury resorts are carefully designed emotional experiences — places where ambition, beauty and reinvention intersect.',
       content: `
@@ -77,7 +80,7 @@ You stop fearing loss.
       title: 'Pebble Beach and Petra',
       category: 'Luxury Travel',
       image:
-        'https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=2000&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1579606032821-4e6161c81bd3?q=80&w=2000&auto=format&fit=crop',
       excerpt:
         'Separated by two thousand years, Petra and Pebble Beach were both playgrounds for the privileged classes of their eras.',
       content: `
@@ -98,28 +101,28 @@ And both existed as carefully curated environments where wealth could briefly tr
     },
 
     {
-      title: 'Mossman and the Search for Meaning',
-      category: 'Travel & Identity',
+      title: 'Mossman and the Daintree',
+      category: 'Rainforest & Reinvention',
       image:
-        'https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=2000&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000&auto=format&fit=crop',
       excerpt:
-        'Tropical rainforests attract people searching for something beyond ordinary life.',
+        'The Daintree rainforest attracts people searching for escape, reinvention and meaning beyond ordinary modern life.',
       content: `
 The ancient Daintree attracts dreamers and escapees from all corners.
 
-Off-grid, alternative-lifestyle communities.
+Off-grid communities.
 
-Loners, artisans, environmentalists and escape artists.
+Alternative lifestyles.
 
-People attempting to outrun the rat-race and discover new, more improved versions of themselves.
+Artists, wanderers, environmentalists and people quietly attempting to rebuild themselves.
 
-Rainforest settlements become emotional frontiers.
+Rainforest towns like Mossman become emotional frontiers.
 
 Places where identity softens and reinvention feels possible.
 
-Where many look to the wet-season rains to wash away past selves or traumas.
+Where many arrive hoping the wet season rains might wash away old versions of themselves.
 
-Perhaps that is why so many people arrive intending to stay only one season — and never leave.
+Perhaps that is why so many people come intending to stay only briefly — and never leave.
       `,
     },
   ]
@@ -228,7 +231,6 @@ function HomePage({ setPage, articles, openArticle }) {
     <>
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
 
-        {/* Background Video */}
         <video
           autoPlay
           muted
@@ -239,10 +241,8 @@ function HomePage({ setPage, articles, openArticle }) {
           <source src="/videos/WebsiteVideo1.mp4" type="video/mp4" />
         </video>
 
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto text-center">
 
           <p className="uppercase tracking-[0.4em] text-stone-300 text-sm mb-6">
@@ -716,6 +716,9 @@ function ContactPage() {
     </section>
   )
 }
+
+```
+
 
 
 
