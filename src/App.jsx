@@ -9,8 +9,6 @@ export default function App() {
       title: 'Life at Millbrook Resort',
       category: 'Luxury & Opportunity',
      image:
-      '/millbrook.jpg',
-      '/millbrook1.jpg',
       '/millbrook2.jpg',
       excerpt:
         'Luxury resorts are carefully designed emotional experiences — places where ambition, beauty and reinvention intersect.',
@@ -79,7 +77,6 @@ You stop fearing loss and grow from it.
       category: 'Luxury Travel',
     image:
       '/pebblebeach.jpg',
-      '/pebblebeach1.jpg',
       excerpt:
         'Separated by two thousand years, Petra and Pebble Beach were both playgrounds for the privileged classes of their eras.',
       content: `
@@ -104,7 +101,6 @@ And both existed as carefully curated environments where wealth could briefly tr
 category: 'Rainforest & Reinvention',
     image:
       '/daintree.jpg',
-      '/daintree1.jpg',
       excerpt:
         'Tropical rainforests attract people searching for something beyond ordinary life.',
       content: `
