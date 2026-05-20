@@ -9,7 +9,9 @@ export default function App() {
       title: 'Life at Millbrook Resort',
       category: 'Luxury & Opportunity',
      image:
-  'https://images.ctfassets.net/0nz43hve27oh/1M8m8Gq0fD3Jg7hM9M3g0B/f1f6dfaf3cb0b3b4f7b69bb95e4c70a0/Millbrook-Resort-Overview.jpg',
+      '/millbrook.jpg',
+      '/millbrook1.jpg',
+      '/millbrook2.jpg',
       excerpt:
         'Luxury resorts are carefully designed emotional experiences — places where ambition, beauty and reinvention intersect.',
       content: `
@@ -77,7 +79,8 @@ You stop fearing loss.
       title: 'Pebble Beach and Petra',
       category: 'Luxury Travel',
     image:
-  'https://www.visitcalifornia.com/sites/visitcalifornia.com/files/styles/welcome_image/public/vc_spotlight_pebble-beach-golf-course_st_rf_1280x640.jpg',
+      '/pebblebeach.jpg',
+      '/pebblebeach1.jpg',
       excerpt:
         'Separated by two thousand years, Petra and Pebble Beach were both playgrounds for the privileged classes of their eras.',
       content: `
@@ -101,7 +104,8 @@ And both existed as carefully curated environments where wealth could briefly tr
      title: 'Mossman and the Daintree',
 category: 'Rainforest & Reinvention',
     image:
-  'https://media.australian.museum/media/dd/images/Daintree_Rainforest.width-1200.6c9f1e1.jpg',
+      '/daintree.jpg',
+      '/daintree1.jpg',
       excerpt:
         'Tropical rainforests attract people searching for something beyond ordinary life.',
       content: `
