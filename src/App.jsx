@@ -29,97 +29,53 @@ The beauty altered them.
 
 And for brief moments, they became slightly different versions of themselves.
 
-That fascinated me.
-
 Luxury resorts are not really about luxury.
 
 They are about transformation.
       `,
     },
-
-    {
-      title: 'Reinvention After Trauma',
-      category: 'Personal Transformation',
-      image:
-        'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop',
-      excerpt:
-        'When identity collapses, reinvention stops being inspirational and becomes a matter of survival.',
-      content: `
-Trauma changes people.
-
-Not symbolically.
-
-Structurally.
-
-The person who emerges afterward is rarely the same as the person who entered the fire.
-
-There is a loneliness to rebuilding that few people understand.
-
-Friends disappear.
-
-Certainties vanish.
-
-And eventually you discover that reinvention is not motivational at all.
-
-It is adaptation.
-
-It is survival.
-
-And yet strangely, inside collapse exists freedom.
-
-Because once everything falls apart, you become dangerous in a different way.
-
-You stop fearing loss.
-      `,
-    },
-
     {
       title: 'Pebble Beach and Petra',
       category: 'Luxury Travel',
       image:
         'https://www.visitcalifornia.com/sites/visitcalifornia.com/files/styles/welcome_image/public/vc_spotlight_pebble-beach-golf-course_st_rf_1280x640.jpg',
       excerpt:
-        'Separated by two thousand years, Petra and Pebble Beach were both playgrounds for the privileged classes of their eras.',
+        'Separated by centuries, Petra and Pebble Beach were both playgrounds for elites seeking spectacle and beauty.',
       content: `
 There was something strangely familiar about Pebble Beach.
 
 Not in its architecture or geography, but in the feeling it created.
 
-The understanding that this was a place designed for people who had already conquered the practical concerns of ordinary life and now sought beauty, exclusivity and emotional experience.
+The understanding that this was a place designed for people who had already conquered the practical concerns of ordinary life.
 
-In many ways, it reminded me of Petra.
+Places like Petra and Pebble Beach become emotional theatres.
 
-Both places were built around spectacle.
-
-Both were engineered to create emotional impact.
-
-And both existed as carefully curated environments where wealth could briefly transcend ordinary reality.
+Curated environments where beauty itself becomes a form of status.
       `,
     },
-
     {
       title: 'Mossman and the Daintree',
       category: 'Rainforest & Reinvention',
       image:
         'https://media.australian.museum/media/dd/images/Daintree_Rainforest.width-1200.6c9f1e1.jpg',
       excerpt:
-        'Tropical rainforests attract people searching for something beyond ordinary life.',
+        'The Daintree rainforest attracts escape artists, wanderers and people rebuilding themselves.',
       content: `
-The ancient Daintree attracts dreamers and escapees from all corners.
+The Daintree attracts dreamers from all corners.
 
-Off-grid, alternative-lifestyle communities.
+Off-grid communities.
 
-Loners, artisans, environmentalists and escape artists.
+Artists.
 
-People attempting to outrun the rat-race and discover new, more improved versions of themselves.
+Wanderers.
+
+Environmentalists.
+
+People attempting to outrun old lives and construct new identities.
 
 Rainforest settlements become emotional frontiers.
 
-Places where identity softens and reinvention feels possible.
-
-Where many look to the wet-season rains to wash away past selves or traumas.
-
-Perhaps that is why so many people arrive intending to stay only one season — and never leave.
+Places where reinvention feels possible.
       `,
     },
   ]
@@ -130,65 +86,33 @@ Perhaps that is why so many people arrive intending to stay only one season — 
     window.scrollTo(0, 0)
   }
 
-  const renderPage = () => {
-    switch (page) {
-      case 'about':
-        return <AboutPage />
-
-      case 'memoir':
-        return <BookPage />
-
-      case 'journal':
-        return (
-          <JournalPage
-            articles={journalArticles}
-            openArticle={openArticle}
-          />
-        )
-
-      case 'article':
-        return (
-          <ArticlePage
-            article={selectedArticle}
-            setPage={setPage}
-          />
-        )
-
-      case 'gallery':
-        return <GalleryPage />
-
-      case 'excerpt':
-        return <ExcerptPage />
-
-      case 'contact':
-        return <ContactPage />
-
-      default:
-        return (
-          <HomePage
-            setPage={setPage}
-            articles={journalArticles}
-            openArticle={openArticle}
-          />
-        )
-    }
+  const pages = {
+    home: <HomePage setPage={setPage} />,
+    about: <AboutPage />,
+    memoir: <MemoirPage />,
+    journal: (
+      <JournalPage articles={journalArticles} openArticle={openArticle} />
+    ),
+    article: (
+      <ArticlePage article={selectedArticle} setPage={setPage} />
+    ),
+    gallery: <GalleryPage />,
+    excerpt: <ExcerptPage />,
+    contact: <ContactPage />,
   }
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans">
+    <div className="bg-black text-white min-h-screen font-sans">
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-md border-b border-stone-800">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <button
-            onClick={() => {
-              setPage('home')
-              window.scrollTo(0, 0)
-            }}
-            className="text-2xl font-semibold tracking-wide"
+            onClick={() => setPage('home')}
+            className="text-2xl tracking-wide font-light"
           >
             From Millbrook to Mossman
           </button>
 
-          <nav className="flex gap-6 text-sm uppercase tracking-[0.2em]">
+          <nav className="hidden md:flex gap-6 uppercase text-sm tracking-[0.2em]">
             {[
               ['Home', 'home'],
               ['About', 'about'],
@@ -204,7 +128,7 @@ Perhaps that is why so many people arrive intending to stay only one season — 
                   setPage(value)
                   window.scrollTo(0, 0)
                 }}
-                className="hover:text-stone-300 transition-colors"
+                className="hover:text-stone-400 transition-colors"
               >
                 {label}
               </button>
@@ -213,46 +137,177 @@ Perhaps that is why so many people arrive intending to stay only one season — 
         </div>
       </header>
 
-      <main className="pt-20">{renderPage()}</main>
+      <main className="pt-20">{pages[page]}</main>
     </div>
   )
 }
 
 function HomePage({ setPage }) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/videos/WebsiteVideo1.mp4" type="video/mp4" />
-      </video>
-
-      <div className="absolute inset-0 bg-black/60"></div>
-
-      <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <p className="uppercase tracking-[0.4em] text-stone-300 text-sm mb-6">
-          A Memoir of Reinvention, Luxury, Collapse & Survival
-        </p>
-
-        <h1 className="text-5xl md:text-7xl font-light leading-tight mb-8">
-          From Millbrook
-          <br />
-          to Mossman
-        </h1>
-
-        <button
-          onClick={() => {
-            setPage('journal')
-            window.scrollTo(0, 0)
-          }}
-          className="border border-white px-8 py-4 rounded-2xl text-lg hover:bg-white hover:text-black transition-all"
+    <>
+      <section className="relative h-screen overflow-hidden flex items-center justify-center">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
         >
-          Explore Journal
-        </button>
+          <source src="/videos/WebsiteVideo1.mp4" type="video/mp4" />
+        </video>
+
+        <div className="absolute inset-0 bg-black/60" />
+
+        <div className="relative z-10 text-center px-6 max-w-5xl">
+          <p className="uppercase tracking-[0.4em] text-sm text-stone-300 mb-6">
+            A Memoir of Reinvention, Collapse & Survival
+          </p>
+
+          <h1 className="text-5xl md:text-8xl font-light mb-8 leading-tight">
+            From Millbrook
+            <br />
+            to Mossman
+          </h1>
+
+          <p className="text-xl md:text-2xl text-stone-300 leading-relaxed max-w-3xl mx-auto mb-12">
+            A cinematic memoir spanning luxury resorts, international travel,
+            emotional collapse, reinvention and survival.
+          </p>
+
+          <div className="flex flex-col md:flex-row gap-6 justify-center">
+            <a
+              href="https://www.amazon.com.au/dp/B0GX356C9C"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-black px-8 py-4 rounded-2xl text-lg font-semibold hover:scale-105 transition-transform"
+            >
+              Buy the Memoir
+            </a>
+
+            <button
+              onClick={() => setPage('journal')}
+              className="border border-white px-8 py-4 rounded-2xl text-lg hover:bg-white hover:text-black transition-all"
+            >
+              Explore Journal
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-stone-950 py-28 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+          {[
+            {
+              title: 'Luxury Culture',
+              text: 'An inside look at elite resort culture and emotional reinvention.',
+            },
+            {
+              title: 'Global Journeys',
+              text: 'Stories spanning New Zealand, Australia, Hawaii, California and beyond.',
+            },
+            {
+              title: 'Collapse & Survival',
+              text: 'An emotionally raw memoir of rebuilding identity after trauma.',
+            },
+          ].map((item) => (
+            <div
+              key={item.title}
+              className="bg-black border border-stone-800 rounded-3xl p-10"
+            >
+              <h3 className="text-3xl font-light mb-6">{item.title}</h3>
+              <p className="text-stone-400 leading-relaxed text-lg">
+                {item.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  )
+}
+
+function AboutPage() {
+  return (
+    <section className="min-h-screen bg-stone-900 px-6 py-24">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <img
+          src="/about-page-portrait.webp"
+          alt="Author"
+          className="rounded-3xl h-[700px] w-full object-cover shadow-2xl"
+        />
+
+        <div>
+          <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+            About the Author
+          </p>
+
+          <h1 className="text-6xl font-light mb-10">Jim Fraser</h1>
+
+          <div className="space-y-8 text-lg text-stone-300 leading-relaxed">
+            <p>
+              From alpine New Zealand to tropical Australia, this memoir traces
+              a life shaped by ambition, travel, collapse and reinvention.
+            </p>
+
+            <p>
+              What began at a luxury golf resort evolved into a deeply personal
+              journey through entrepreneurship, love, emotional collapse and
+              survival.
+            </p>
+
+            <p>
+              From Millbrook to Mossman explores the emotional cost of ambition
+              and the courage required to rebuild identity from the ground up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function MemoirPage() {
+  return (
+    <section className="min-h-screen bg-black px-6 py-24">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div className="bg-stone-900 rounded-3xl p-10 border border-stone-800">
+          <img
+            src="/book-cover-image.webp"
+            alt="Book Cover"
+            className="rounded-2xl w-full shadow-2xl"
+          />
+        </div>
+
+        <div>
+          <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+            The Memoir
+          </p>
+
+          <h1 className="text-6xl font-light mb-10">
+            An Extraordinary Journey
+          </h1>
+
+          <div className="space-y-8 text-lg text-stone-300 leading-relaxed mb-12">
+            <p>
+              Honest, cinematic and emotionally raw, From Millbrook to Mossman
+              explores the emotional realities hidden beneath ambition and success.
+            </p>
+
+            <p>
+              A memoir spanning luxury resort culture, international travel,
+              collapse, recovery and reinvention.
+            </p>
+          </div>
+
+          <a
+            href="https://www.amazon.com.au/dp/B0GX356C9C"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-black px-8 py-4 rounded-2xl text-lg font-semibold hover:scale-105 transition-transform inline-block"
+          >
+            Order Your Copy
+          </a>
+        </div>
       </div>
     </section>
   )
@@ -262,10 +317,20 @@ function JournalPage({ articles, openArticle }) {
   return (
     <section className="min-h-screen bg-black px-6 py-24">
       <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-20">
+          <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+            Journal
+          </p>
+
+          <h1 className="text-6xl font-light mb-6">
+            Stories, Reflections & Essays
+          </h1>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-10">
-          {articles.map((article, idx) => (
+          {articles.map((article) => (
             <button
-              key={idx}
+              key={article.title}
               onClick={() => openArticle(article)}
               className="group text-left bg-stone-950 border border-stone-800 rounded-3xl overflow-hidden hover:border-stone-600 transition-all"
             >
@@ -286,7 +351,7 @@ function JournalPage({ articles, openArticle }) {
                   {article.title}
                 </h2>
 
-                <p className="text-stone-400 text-lg leading-relaxed mb-6">
+                <p className="text-stone-400 text-lg leading-relaxed">
                   {article.excerpt}
                 </p>
               </div>
@@ -298,7 +363,7 @@ function JournalPage({ articles, openArticle }) {
   )
 }
 
-function ArticlePage({ article }) {
+function ArticlePage({ article, setPage }) {
   if (!article) return null
 
   return (
@@ -313,6 +378,10 @@ function ArticlePage({ article }) {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 h-full flex flex-col justify-end pb-20">
+          <p className="uppercase tracking-[0.3em] text-stone-400 text-sm mb-4">
+            {article.category}
+          </p>
+
           <h1 className="text-5xl md:text-7xl font-light leading-tight max-w-4xl">
             {article.title}
           </h1>
@@ -320,46 +389,91 @@ function ArticlePage({ article }) {
       </div>
 
       <article className="max-w-3xl mx-auto px-6 py-24">
-        <div className="whitespace-pre-line text-stone-300 text-xl md:text-2xl leading-[2.1] font-light">
+        <div className="whitespace-pre-line text-stone-300 text-xl leading-[2.1] font-light">
           {article.content}
+        </div>
+
+        <div className="mt-20 border-t border-stone-800 pt-10">
+          <button
+            onClick={() => setPage('journal')}
+            className="text-stone-400 hover:text-white transition-colors"
+          >
+            ← Back to Journal
+          </button>
         </div>
       </article>
     </section>
   )
 }
 
-function AboutPage() {
-  return (
-    <section className="min-h-screen bg-stone-900 px-6 py-24 flex items-center justify-center">
-      <h2 className="text-5xl font-light">Jim Fraser</h2>
-    </section>
-  )
-}
-
-function BookPage() {
-  return (
-    <section className="min-h-screen bg-black px-6 py-24 flex items-center justify-center">
-      <img
-        src="/book-cover-image.webp"
-        alt="Book Cover"
-        className="rounded-2xl shadow-2xl w-full max-w-md"
-      />
-    </section>
-  )
-}
-
 function GalleryPage() {
+  const images = [
+    '/PaperbackBookWEBP.webp',
+    '/OpenBook.jpg',
+    '/Gallery1b.webp',
+    '/gallery-image-2.webp',
+  ]
+
   return (
-    <section className="min-h-screen bg-stone-950 px-6 py-24 flex items-center justify-center">
-      <h2 className="text-5xl font-light">Gallery</h2>
+    <section className="min-h-screen bg-stone-950 px-6 py-24">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-20">
+          <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+            Gallery
+          </p>
+
+          <h1 className="text-6xl font-light">Places & Moments</h1>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {images.map((image) => (
+            <img
+              key={image}
+              src={image}
+              alt="Gallery"
+              className="rounded-3xl h-[450px] w-full object-cover shadow-2xl hover:scale-[1.02] transition-transform"
+            />
+          ))}
+        </div>
+      </div>
     </section>
   )
 }
 
 function ExcerptPage() {
   return (
-    <section className="min-h-screen bg-black px-6 py-24 flex items-center justify-center">
-      <h2 className="text-5xl font-light">Memoir Excerpt</h2>
+    <section className="min-h-screen bg-black px-6 py-24">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-20">
+          <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+            Memoir Excerpt
+          </p>
+
+          <h1 className="text-6xl font-light mb-6">Read a Sample</h1>
+        </div>
+
+        <div className="bg-stone-900 border border-stone-800 rounded-3xl p-12 md:p-16 shadow-2xl">
+          <div className="space-y-8 text-xl leading-relaxed text-stone-300">
+            <p>
+              During the late 80s, on a stopover in Maui, I met a woman named Noelle.
+            </p>
+
+            <p>
+              She was California distilled — sun-bronzed skin, white teeth,
+              effortless ease and warmth.
+            </p>
+
+            <p>
+              We drove the road to Hana in a cheap convertible,
+              music loud, jungle pressing in around us.
+            </p>
+
+            <p>
+              It felt less like travel and more like entering an alternate version of life.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
@@ -378,9 +492,13 @@ function ContactPage() {
           Contact
         </p>
 
-        <h2 className="text-5xl font-light mb-10 text-center text-white">
+        <h1 className="text-5xl font-light mb-10 text-center text-white">
           Get In Touch
-        </h2>
+        </h1>
+
+        <p className="text-center text-stone-200 mb-10 text-lg">
+          For media enquiries, interviews and reader feedback.
+        </p>
 
         <div className="text-center">
           <a
@@ -394,6 +512,7 @@ function ContactPage() {
     </section>
   )
 }
+
 ```
 
 
