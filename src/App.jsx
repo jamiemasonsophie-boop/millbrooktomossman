@@ -224,14 +224,24 @@ Perhaps that is why so many people arrive intending to stay only one season — 
 function HomePage({ setPage, articles, openArticle }) {
   return (
     <>
-      <section
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center px-6"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('/homepage-hero-background.webp')",
-        }}
-      >
-        <div className="max-w-5xl mx-auto text-center">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
+
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/WebsiteVideo1.mp4" type="video/mp4" />
+        </video>
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-5xl mx-auto text-center">
 
           <p className="uppercase tracking-[0.4em] text-stone-300 text-sm mb-6">
             A Memoir of Reinvention, Luxury, Collapse & Survival
