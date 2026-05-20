@@ -24,9 +24,9 @@ An emotional architecture designed to momentarily suspend ordinary life.
 
 People arrived carrying invisible burdens — marriages under strain, careers built on relentless pressure, identities quietly unraveling beneath outward success.
 
-But once inside the gates, something shifted.
+But once inside the gates, everything changed.
 
-The mountains softened people.
+The majesty of the mountains softened people.
 
 The beauty altered them.
 
