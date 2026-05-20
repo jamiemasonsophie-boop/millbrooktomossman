@@ -43,25 +43,25 @@ They're about transformation.
       image:
         'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop',
       excerpt:
-        'When identity collapses, reinvention stops being inspirational and becomes a matter of survival.',
+        'When identity collapses, reinvention stops being inspirational and becomes a matter of survival. The challenge becomess finding a navigable pathway through the rocky landscape we find ourselves surrounded by',
       content: `
 Trauma changes people.
 
-Not symbolically - structurally.
+Not symbolically - but structurally.
 
-And the person who emerges afterward is rarely the same as the person who entered the fire.
+And the person who emerges afterwards is rarely the same as the person who entered the fire.
 
 There is a loneliness to rebuilding that few people understand.
 
 Friends often disappear.
 
-Certainties generally vanish.
+Certainties vanish.
 
 And eventually you discover that reinvention is not motivational at all.
 
-It's a conduit to adaptation.
+It is often driven by adaptation and can be a genuine conduit to growth.
 
-And like evolution itself - whose #1 rule is: adapt or become extinct - it's often a case of survival.
+And like evolution itself - whose #1 rule is: adapt or die - it comes from a sheer will to survive.
 
 And yet almost magically, after collapse, comes reinvention and eventual freedom.
 
@@ -77,19 +77,19 @@ You stop fearing loss and grow from it.
     image:
       '/pebblebeach.jpg',
       excerpt:
-        'Separated by two thousand years, Petra and Pebble Beach were both playgrounds for the privileged classes of their eras.',
+        'The ancient, lost-city of Petra and Pebble Beach - both playgrounds for the privileged classes from different eras.',
       content: `
 There was something strangely familiar about Pebble Beach.
 
 Not in its architecture or breathtaking geography, but in the feeling it created.
 
-The understanding that this was a place designed for people who had already conquered the practical concerns of ordinary life and now sought beauty, exclusivity and emotional experience.
+The understanding that this is a place designed for people who've already conquered the practical concerns of ordinary life and now seek beauty, exclusivity and emotional experience.
 
-In many ways, it reminded me of the ancient city of Petra in Jordan.
+In many ways, it reminds me of the ancient city of Petra in Southern Jordan.
 
 Although thousands of years and thousands of miles apart, both places were built around spectacle.
 
-Both were engineered to create emotional impact.
+Both engineered to create emotional impact.
 
 And both existed as carefully curated environments where wealth could briefly transcend ordinary reality.
       `,
@@ -99,23 +99,23 @@ And both existed as carefully curated environments where wealth could briefly tr
      title: 'Mossman and the Daintree',
 category: 'Rainforest & Reinvention',
     image:
-      '/daintree.jpg',
+      '/daintree1.jpg',
       excerpt:
-        'Tropical rainforests attract people searching for something beyond ordinary life.',
+        'Tropical rainforests attract people searching for something beyond an ordinary life.',
       content: `
-The ancient Daintree attracts dreamers and escapees from all corners.
+The 150 million year old prehitoric Daintree attracts dreamers and escapees from all corners.
 
-Off-grid, alternative-lifestyle communities.
+Off-grid, alternative-lifestyle communities. where the ocean meets the forest.
 
 Loners, artisans, environmentalists and escape artists.
 
-People attempting to outrun the rat-race and discover new, more improved versions of themselves.
+People attempting to outrun society and discover new, more improved versions of themselves.
 
 Rainforest settlements become emotional frontiers.
 
 Places where identity softens and reinvention feels possible.
 
-Where many look to the wet-season rains to wash away past selves or traumas.
+Where many look to the wet-season rains to wash away past versions of themselves or cleanse personal traumas.
 
 Perhaps that is why so many people arrive intending to stay only one season — and never leave.
       `,
