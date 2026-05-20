@@ -12,7 +12,7 @@ export default function App() {
       title: 'Life at Millbrook Resort',
       category: 'Luxury & Opportunity',
       image:
-        'https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=2000&auto=format&fit=crop',
+        ''/millbrook-resort.jpg'',
       excerpt:
         'Luxury resorts are carefully designed emotional experiences — places where ambition, beauty and reinvention intersect.',
       content: `
@@ -24,9 +24,9 @@ An emotional architecture designed to momentarily suspend ordinary life.
 
 People arrived carrying invisible burdens — marriages under strain, careers built on relentless pressure, identities quietly unraveling beneath outward success.
 
-But once inside the gates, everything changed.
+But once inside the gates, something shifted.
 
-The majesty of the mountains softened people.
+The mountains softened people.
 
 The beauty altered them.
 
@@ -80,7 +80,7 @@ You stop fearing loss.
       title: 'Pebble Beach and Petra',
       category: 'Luxury Travel',
       image:
-        'https://images.unsplash.com/photo-1579606032821-4e6161c81bd3?q=80&w=2000&auto=format&fit=crop',
+        ''/petra-pebblebeach.jpg'',
       excerpt:
         'Separated by two thousand years, Petra and Pebble Beach were both playgrounds for the privileged classes of their eras.',
       content: `
@@ -104,7 +104,7 @@ And both existed as carefully curated environments where wealth could briefly tr
       title: 'Mossman and the Daintree',
       category: 'Rainforest & Reinvention',
       image:
-        'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000&auto=format&fit=crop',
+        ''/daintree-rainforest.jpg'',
       excerpt:
         'The Daintree rainforest attracts people searching for escape, reinvention and meaning beyond ordinary modern life.',
       content: `
@@ -718,6 +718,7 @@ function ContactPage() {
 }
 
 ```
+
 
 
 
