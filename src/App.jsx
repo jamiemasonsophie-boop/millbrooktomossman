@@ -635,21 +635,21 @@ function ExcerptPage() {
 
             <p>
               I’d felt this once before.
-              Years earlier, during a stopover on Maui, I’d met a woman named Noelle.
+              Years earlier, during a stopover on Maui on my way to Heathrow, I’d met a woman named Noelle.
             </p>
 
             <p>
               She was crewing aboard an ocean-going yacht, a Swan 54’, owned by an L.A. television producer named Chuck. 
-              She was California distilled - sun-bronzed skin, white teeth, with an ease that felt far more inherited than learned.
+              California distilled - sun-bronzed skin, white teeth, with an ease that felt far more inherited than learned.
             </p>
 
             <p>
-              Exactly the way The Beach Boys had wished all girls could be back on their 1965 hit record.
+              She was exactly the way The Beach Boys had wished all girls could be back on their 1965 hit record.
               We met beneath the sprawling branches of Lahainas' iconic Banyan tree outside the Pioneer Hotel.
             </p>
 
             <p>
-              “Hang loose,” she said, flashing me a shaka, smiling like it was more than a greeting.
+              “Hang loose,” she said, flashing me a shaka, smiling like it was more than just a greeting.
               We bonded instantly over a few Coronas and fell quickly into each other's rhythm.
             </p>
 
@@ -659,8 +659,8 @@ function ExcerptPage() {
             </p>
 
             <p>
-              We drove the sinuous coast road out to heavenly-Hana in a cheap convertible I'd rented - music loud, jungle pressing in, Noelle standing up on her seat while I drove dancing to Bon Jovi, waving at the passing schoolkids like the whole island belonged to her.
-              She had a way of looking at me that made everything feel heightened. Immediate.
+              We travelled the sinuous coast road out to heavenly-Hana in a cheap convertible I'd rented - music loud, jungle pressing in, Noelle standing on her seat dancing to Bon Jovi, blowing kisses at the passing schoolkids like the whole island belonged to her as I drove.
+              She had a way of looking at me that made everything feel heightened. Immediate. Bullet-proof.
             </p>
 
             <p>
@@ -669,7 +669,7 @@ function ExcerptPage() {
             </p>
 
             <p>
-              She was sailing back to San Fran. 
+              Chuck was sailing back to San Fran. 
               I was heading to London.
             </p>
 
