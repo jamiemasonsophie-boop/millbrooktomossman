@@ -11,9 +11,9 @@ export default function App() {
      image:
       '/millbrook2.jpg',
       excerpt:
-        'Luxury resorts are carefully designed emotional experiences — manicured, man-made environments where ambition, beauty and reinvention intersect.',
+        'Luxury resorts are carefully designed physical and emotional experiences — manicured, man-made environments where ambition, beauty and reinvention intersect.',
       content: `
-Millbrook was never simply a golf resort.
+Millbrook Resort was never simply a golf resort.
 
 It was an atmosphere.
 
@@ -25,7 +25,7 @@ But once inside the gates, everything changes.
 
 The majesty of the mountains softens people.
 
-The beauty alters them.
+The beauty often overshelms and alters them.
 
 And for brief moments, they become slightly different versions of themselves.
 
@@ -61,7 +61,7 @@ And eventually you discover that reinvention is not motivational at all.
 
 It is often driven by adaptation and can be a genuine conduit to growth.
 
-And like evolution itself - whose #1 rule is: adapt or die - it comes from a sheer will to survive.
+And like evolution itself - the #1 rule has always been, adapt or die - so growth comes from a sheer will to survive.
 
 And yet almost magically, after collapse, comes reinvention and eventual freedom.
 
@@ -79,7 +79,7 @@ You stop fearing loss and grow from it.
       excerpt:
         'The ancient, lost-city of Petra, and today's modern Pebble Beach Golf Links - both playgrounds for the privileged classes from different eras.',
       content: `
-When I first vivited Pebble Beach back in the late '80's, I immediately knew it was a special place.
+When I first vivited Pebble Beach back in the late eightees, I immediately knew it was a special place.
 
 Not in its architecture or breathtaking geography, but in the feeling it created.
 
@@ -87,13 +87,13 @@ The understanding that this is a place designed for people who've already conque
 
 In many ways, it reminded me of the ancient city of Petra in Southern Jordan.
 
-Although thousands of years and thousands of miles apart, both places were built around spectacle.
+Although thousands of years and thousands of miles separate the two, both were built around spectacle.
 
 Both engineered to create emotional impact.
 
 And both existed as carefully curated environments where wealth could briefly transcend ordinary reality.
 
-Playgrouns for those who have it all, but want more.
+Playgrouns for those who have it all, but want even more.
       `,
     },
 
@@ -103,21 +103,21 @@ category: 'Rainforest & Reinvention',
     image:
       '/daintree1.jpg',
       excerpt:
-        'The tropics often attract people searching for something beyond an ordinary life.',
+        'The tropics attract people searching for something beyond an ordinary life.',
       content: `
 The 150 million year old prehitoric Daintree Rainforest congregates dreamers and escapees from all corners.
 
 Off-grid, alternative-lifestyle communities - loners, artisans, environmentalists and escape artists.
 
-People attempting to outrun society and discover new, more improved versions of themselves drawn to where the ocean meets the forest.
+Those seeking to outrun society and discover new, more improved versions of themselves, drawn to that special zone where ocean meets forest.
 
-Rainforest settlements become emotional frontiers.
+Rainforest settlements also become emotional frontiers.
 
 Places where identity softens and reinvention feels possible.
 
-Where many look to the wet-season rains to wash away past versions of themselves or cleanse personal traumas.
+Where many look to the rains of the wet-season to wash away past versions of themselves, or cleanse personal traumas.
 
-Perhaps that is why so many people arrive intending to stay only one season — and never leave.
+Perhaps this is why so many people arrive intending to stay only one season — and never leave.
       `,
     },
   ]
