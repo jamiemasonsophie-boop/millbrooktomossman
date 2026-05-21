@@ -77,21 +77,23 @@ You stop fearing loss and grow from it.
     image:
       '/pebblebeach.jpg',
       excerpt:
-        'The ancient, lost-city of Petra and Pebble Beach - both playgrounds for the privileged classes from different eras.',
+        'The ancient, lost-city of Petra, and today's modern Pebble Beach Golf Links - both playgrounds for the privileged classes from different eras.',
       content: `
-There was something strangely familiar about Pebble Beach.
+When I first vivited Pebble Beach back in the late '80's, I immediately knew it was a special place.
 
 Not in its architecture or breathtaking geography, but in the feeling it created.
 
 The understanding that this is a place designed for people who've already conquered the practical concerns of ordinary life and now seek beauty, exclusivity and emotional experience.
 
-In many ways, it reminds me of the ancient city of Petra in Southern Jordan.
+In many ways, it reminded me of the ancient city of Petra in Southern Jordan.
 
 Although thousands of years and thousands of miles apart, both places were built around spectacle.
 
 Both engineered to create emotional impact.
 
 And both existed as carefully curated environments where wealth could briefly transcend ordinary reality.
+
+Playgrouns for those who have it all, but want more.
       `,
     },
 
@@ -101,15 +103,13 @@ category: 'Rainforest & Reinvention',
     image:
       '/daintree1.jpg',
       excerpt:
-        'Tropical rainforests attract people searching for something beyond an ordinary life.',
+        'The tropics often attract people searching for something beyond an ordinary life.',
       content: `
-The 150 million year old prehitoric Daintree attracts dreamers and escapees from all corners.
+The 150 million year old prehitoric Daintree Rainforest congregates dreamers and escapees from all corners.
 
-Off-grid, alternative-lifestyle communities. where the ocean meets the forest.
+Off-grid, alternative-lifestyle communities - loners, artisans, environmentalists and escape artists.
 
-Loners, artisans, environmentalists and escape artists.
-
-People attempting to outrun society and discover new, more improved versions of themselves.
+People attempting to outrun society and discover new, more improved versions of themselves drawn to where the ocean meets the forest.
 
 Rainforest settlements become emotional frontiers.
 
