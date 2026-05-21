@@ -624,7 +624,7 @@ function ExcerptPage() {
           </p>
 
           <h2 className="text-5xl font-light mb-6">
-            Read a Sample
+            Read a Sample - Chapter One: Paradigm Shift.
           </h2>
 
         </div>
@@ -634,22 +634,52 @@ function ExcerptPage() {
           <div className="space-y-8 text-xl leading-relaxed text-stone-300 max-w-3xl mx-auto">
 
             <p>
-              During the late 80's, on a stopover in Maui,
-              I'd met a woman named Noelle.
+              I’d felt this once before.
+              Years earlier, during a stopover on Maui, I’d met a woman named Noelle.
             </p>
 
             <p>
-              She was California distilled — sun-bronzed skin,
-              white teeth, effortless ease and warmth.
+              She was crewing aboard an ocean-going yacht, a Swan 54’, owned by an L.A. television producer named Chuck. 
+              She was California distilled - sun-bronzed skin, white teeth, with an ease that felt far more inherited than learned.
             </p>
 
             <p>
-              We drove the coast road to Hana in a cheap convertible,
-              music loud, jungle pressing in around us.
+              Exactly the way The Beach Boys had wished all girls could be back on their 1965 hit record.
+              We met beneath the sprawling branches of Lahainas' iconic Banyan tree outside the Pioneer Hotel.
             </p>
 
             <p>
-              It felt less like travel and more like entering an alternate version of life.
+              “Hang loose,” she said, flashing me a shaka, smiling like it was more than a greeting.
+              We bonded instantly over a few Coronas and fell quickly into each other's rhythm.
+            </p>
+
+            <p>
+              Time loosened as days spent together stretched. 
+              She introduced me to getting high on Maui-Wowie, to tripping on magic ‘shrooms, and to a slower, more fluid way of moving through the world. 
+            </p>
+
+            <p>
+              We drove the sinuous coast road out to heavenly-Hana in a cheap convertible I'd rented - music loud, jungle pressing in, Noelle standing up on her seat while I drove dancing to Bon Jovi, waving at the passing schoolkids like the whole island belonged to her.
+              She had a way of looking at me that made everything feel heightened. Immediate.
+            </p>
+
+            <p>
+              I didn’t have language for it then, but something in my psyche was shifting - subtly, but permanently.
+              Leaving her was far harder than I expected.
+            </p>
+
+            <p>
+              She was sailing back to San Fran. 
+              I was heading to London.
+            </p>
+
+            <p>
+              “You should come to Santa Cruz on your way back,” she said on our last night together, sitting barefoot at the marina. 
+              “Let me show you the REAL California.”
+            </p>
+
+            <p>
+              So, that's exactly what I did...
             </p>
 
           </div>
