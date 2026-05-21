@@ -244,7 +244,8 @@ function HomePage({ setPage, articles, openArticle }) {
         <div className="relative z-10 max-w-5xl mx-auto text-center">
 
           <p className="uppercase tracking-[0.4em] text-stone-300 text-sm mb-6">
-            A Memoir of Reinvention, Luxury, Collapse & Survival
+            A Memoir of Love, Loss, Collapse, Reinvention & Survival.
+            Raw, Real & Revealing.
           </p>
 
           <h1 className="text-5xl md:text-7xl font-light leading-tight mb-8">
@@ -255,8 +256,7 @@ function HomePage({ setPage, articles, openArticle }) {
 
           <p className="text-xl md:text-2xl text-stone-300 max-w-3xl mx-auto leading-relaxed mb-12">
             An emotionally raw journey spanning luxury resorts,
-            international travel, entrepreneurship, love, loss,
-            reinvention and the relentless pursuit of identity.
+            global travel, entrepreneurship, and the relentless pursuit of identity.
           </p>
 
           <div className="flex flex-col md:flex-row gap-6 justify-center">
