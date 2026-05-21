@@ -77,9 +77,9 @@ You stop fearing loss and grow from it.
     image:
       '/pebblebeach.jpg',
       excerpt:
-        'The ancient, lost-city of Petra, and today's modern Pebble Beach Golf Links - both playgrounds for the privileged classes from different eras.',
+        'The ancient, lost-city of Petra, and the modern Pebble Beach Golf Links of today - both playgrounds for the privileged classes from different eras.',
       content: `
-When I first vivited Pebble Beach back in the late eightees, I immediately knew it was a special place.
+When I first visited Pebble Beach back in the late eightees, I immediately felt it was a special place.
 
 Not in its architecture or breathtaking geography, but in the feeling it created.
 
