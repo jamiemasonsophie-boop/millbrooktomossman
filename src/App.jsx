@@ -255,8 +255,8 @@ function HomePage({ setPage, articles, openArticle }) {
           </h1>
 
           <p className="text-xl md:text-2xl text-stone-300 max-w-3xl mx-auto leading-relaxed mb-12">
-            An emotionally raw journey spanning luxury resorts,
-            global travel, entrepreneurship, and the relentless pursuit of identity.
+            Raw, Real and Revealing. 
+            An emotional, global journey through luxury resorts, entrepreneurship, and the relentless pursuit of identity.
           </p>
 
           <div className="flex flex-col md:flex-row gap-6 justify-center">
@@ -289,15 +289,15 @@ function HomePage({ setPage, articles, openArticle }) {
 
           <div className="mb-20 text-center">
             <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
-              Featured Journal Essays
+              Featured Journal Essays.
             </p>
 
             <h2 className="text-5xl font-light mb-6">
-              Luxury, Identity & Reinvention
+              Luxury, Identity & Reinvention...
             </h2>
 
             <p className="text-stone-400 text-xl max-w-3xl mx-auto">
-              Personal reflections exploring elite resort culture,
+              Diverse personal reflections exploring elite resort culture,
               emotional collapse, travel, wealth, transformation and survival.
             </p>
           </div>
