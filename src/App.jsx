@@ -25,7 +25,7 @@ But once inside the gates, everything changes.
 
 The majesty of the mountains softens people.
 
-The beauty often overshelms and alters them.
+The beauty often overwhelms and alters them.
 
 And for brief moments, they become slightly different versions of themselves.
 
@@ -43,7 +43,7 @@ They're about transformation.
       image:
         'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop',
       excerpt:
-        'When identity collapses, reinvention stops being inspirational and becomes a matter of survival. The challenge becomess finding a navigable pathway through the rocky landscape we find ourselves surrounded by',
+        'When identity collapses, reinvention stops being inspirational and becomes a matter of survival. The challenge becomes finding a navigable pathway through the rocky landscape we find ourselves surrounded by',
       content: `
 Trauma changes people.
 
@@ -79,7 +79,7 @@ You stop fearing loss and grow from it.
       excerpt:
         'The ancient, lost-city of Petra, and the modern Pebble Beach Golf Links of today - both playgrounds for the privileged classes from different eras.',
       content: `
-When I first visited Pebble Beach back in the late eightees, I immediately felt it was a special place.
+When I first visited Pebble Beach back in the late eighties, I immediately felt it was a special place.
 
 Not in its architecture or breathtaking geography, but in the feeling it created.
 
@@ -93,7 +93,7 @@ Both engineered to create emotional impact.
 
 And both existed as carefully curated environments where wealth could briefly transcend ordinary reality.
 
-Playgrouns for those who have it all, but want even more.
+Playgrounds for those who have it all, but want even more.
       `,
     },
 
@@ -105,7 +105,7 @@ category: 'Rainforest & Reinvention',
       excerpt:
         'The tropics attract people searching for something beyond an ordinary life.',
       content: `
-The 150 million year old prehitoric Daintree Rainforest congregates dreamers and escapees from all corners.
+The 150 million year old prehistoric Daintree Rainforest congregates dreamers and escapees from all corners.
 
 Off-grid, alternative-lifestyle communities - loners, artisans, environmentalists and escape artists.
 
@@ -187,7 +187,7 @@ Perhaps this is why so many people arrive intending to stay only one season — 
             From Millbrook to Mossman
           </button>
 
-          <nav className="flex gap-6 text-sm uppercase tracking-[0.2em]">
+          <nav className="flex flex-wrap justify-center gap-4 text-xs md:text-sm uppercase tracking-[0.15em]">
 
             {[
               ['Home', 'home'],
@@ -228,10 +228,11 @@ function HomePage({ setPage, articles, openArticle }) {
 
         {/* Background Video */}
         <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/videos/WebsiteVideo1.mp4" type="video/mp4" />
@@ -700,7 +701,7 @@ function ContactPage() {
         <div className="text-center">
 
           <a
-            href="mailto:your@email.com"
+            href="mailto:jamiemasonsophie@gmail.com"
             className="inline-block bg-white text-black px-8 py-4 rounded-2xl font-bold text-lg hover:scale-[1.02] transition-transform"
           >
             Send Message
